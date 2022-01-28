@@ -8,35 +8,29 @@ function Navbar() {
     <div>
       <nav className="bg-teal-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-20">
             <div className="flex items-center">
-              <div className="flex-shrink-0">elisabeth</div>
-              <div className="hidden md:block">
-                <div className="hover:bg-gray-700 ml-10 flex items-baseline space-x-4">
-                  <Link
-                    href="/blog"
-                    className="hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Blog
-                  </Link>
-                  <Link
-                    href="#"
-                    className="hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Shop
-                  </Link>
-                  <Link
-                    href="#"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Projects
-                  </Link>
-                  <Link
-                    href="#"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    About
-                  </Link>
+              <div className="flex-shrink-0 font-menlo text-3xl hover:font-bold">
+                elisabeth
+              </div>
+              <div className="flex justify-end list-reset m-0 w-full md:w-auto">
+                <div className="ml-10 flex items-baseline space-x-4">
+                  <div className="hover:font-bold rounded-md">
+                    <Link href="/blog" passHref>
+                      Blog
+                    </Link>
+                  </div>
+                  <div className="hover:font-bold rounded-md">
+                    <Link href="#" passHref>
+                      Shop
+                    </Link>
+                  </div>
+                  <div className="hover:font-bold rounded-md">
+                    <Link href="#">Projects</Link>
+                  </div>
+                  <div className="">
+                    <Link href="#">About</Link>
+                  </div>
                 </div>
               </div>
             </div>
@@ -99,7 +93,7 @@ function Navbar() {
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <ul>
-                  <li>
+                  <li className="hover:font-bold text-white px-3 py-2 rounded-md text-sm font-medium">
                     <Link
                       href="#"
                       className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
@@ -107,7 +101,7 @@ function Navbar() {
                       Blog
                     </Link>
                   </li>
-                  <li>
+                  <li className="hover:font-bold text-white px-3 py-2 rounded-md text-sm font-medium">
                     <Link
                       href="#"
                       className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
@@ -115,7 +109,7 @@ function Navbar() {
                       Shop
                     </Link>
                   </li>
-                  <li>
+                  <li className="hover:font-bold text-white px-3 py-2 rounded-md text-sm font-medium">
                     <Link
                       href="#"
                       className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
@@ -123,7 +117,7 @@ function Navbar() {
                       Projects
                     </Link>
                   </li>
-                  <li>
+                  <li className="hover:font-bold text-white px-3 py-2 rounded-md text-sm font-medium">
                     <Link
                       href="#"
                       className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
