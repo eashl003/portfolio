@@ -15,7 +15,7 @@ const Navbar = ({ categories = [], blogs = [] }) => {
             <div className="flex items-center">
               <div className="flex-shrink-0 font-menlo text-3xl absolute top-4 ml-10 left-0 hover:font-bold">
                 <Link href="/" passHref>
-                  elisabeth ashley
+                  elisabeth ashleyy
                 </Link>
               </div>
               <div className="hidden md:flex items-center md:flex-1 lg:w-">
