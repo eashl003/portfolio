@@ -1,19 +1,22 @@
-import React, { useState } from "react"
+import React, { useState, useEffect, Fragment } from "react"
 import Link from "next/link"
-import { Transition } from "@headlessui/react"
+import { Menu, Transition } from "@headlessui/react"
+import { ChevronDownIcon } from "@heroicons/react/solid"
+import classNames from "classnames"
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
+
   return (
     <div>
       <nav className="bg-teal-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-20">
+          <div className="flex items-center justify-end h-20">
             <div className="flex items-center">
-              <div className="flex-shrink-0 font-menlo text-3xl hover:font-bold">
-                elisabeth
+              <div className="flex-shrink-0 font-menlo text-3xl absolute top-4 ml-10 left-0 hover:font-bold">
+                elisabeth ashley
               </div>
-              <div className="flex justify-end list-reset m-0 w-full md:w-auto">
+              <div className="hidden md:flex items-center md:flex-1 lg:w-">
                 <div className="ml-10 flex items-baseline space-x-4">
                   <div className="hover:font-bold rounded-md">
                     <Link href="/blog" passHref>
@@ -21,9 +24,99 @@ function Navbar() {
                     </Link>
                   </div>
                   <div className="hover:font-bold rounded-md">
-                    <Link href="#" passHref>
-                      Shop
-                    </Link>
+                    <Menu as="div" className="relative inline-block text-left">
+                      <div>
+                        <Menu.Button className="inline-flex justify-center w-full rounded-md shadow-sm px-4 py-2 text-sm font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500">
+                          Shop
+                          <ChevronDownIcon
+                            className="-mr-1 ml-2 h-5 w-5"
+                            aria-hidden="true"
+                          />
+                        </Menu.Button>
+                      </div>
+                      <Transition
+                        as={Fragment}
+                        enter="transition ease-out duration-100"
+                        enterFrom="transform opacity-0 scale-95"
+                        enterTo="transform opacity-100 scale-100"
+                        leave="transition ease-in duration-75"
+                        leaveFrom="transform opacity-100 scale-100"
+                        leaveTo="transform opacity-0 scale-95"
+                      >
+                        <Menu.Items className="text-black origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+                          <div className="py-1">
+                            <li>
+                              <Menu.Item>
+                                {({ active }) => (
+                                  <Link
+                                    href="#"
+                                    className={classNames(
+                                      active
+                                        ? "bg-gray-100 text-black"
+                                        : "text-black",
+                                      "block px-4 py-2 text-sm"
+                                    )}
+                                  >
+                                    All Posts
+                                  </Link>
+                                )}
+                              </Menu.Item>
+                            </li>
+                            <li>
+                              <Menu.Item>
+                                {({ active }) => (
+                                  <Link
+                                    href="#"
+                                    className={classNames(
+                                      active
+                                        ? "bg-gray-100 text-gray-900"
+                                        : "text-gray-700",
+                                      "block px-4 py-2 text-sm"
+                                    )}
+                                  >
+                                    Tech
+                                  </Link>
+                                )}
+                              </Menu.Item>
+                            </li>
+                            <li>
+                              <Menu.Item>
+                                {({ active }) => (
+                                  <Link
+                                    href="#"
+                                    className={classNames(
+                                      active
+                                        ? "bg-gray-100 text-gray-900"
+                                        : "text-gray-700",
+                                      "block px-4 py-2 text-sm"
+                                    )}
+                                  >
+                                    Career
+                                  </Link>
+                                )}
+                              </Menu.Item>
+                            </li>
+                            <form method="POST" action="#">
+                              <Menu.Item>
+                                {({ active }) => (
+                                  <button
+                                    type="submit"
+                                    className={classNames(
+                                      active
+                                        ? "bg-gray-100 text-gray-900"
+                                        : "text-gray-700",
+                                      "block w-full text-left px-4 py-2 text-sm"
+                                    )}
+                                  >
+                                    Lifestyle
+                                  </button>
+                                )}
+                              </Menu.Item>
+                            </form>
+                          </div>
+                        </Menu.Items>
+                      </Transition>
+                    </Menu>
                   </div>
                   <div className="hover:font-bold rounded-md">
                     <Link href="#">Projects</Link>
