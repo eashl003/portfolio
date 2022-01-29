@@ -5,8 +5,8 @@ import CategoryButtons from "../components/CategoryButtons"
 const ShopPage = ({ products, categories }) => {
   return (
     <div>
-      <CategoryButtons categories={categories}/>
-      <ProductsList products={products}/>
+      <CategoryButtons categories={categories} />
+      <ProductsList products={products} />
     </div>
   )
 }
