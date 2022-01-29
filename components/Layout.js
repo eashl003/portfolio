@@ -6,7 +6,7 @@ const Layout = ({ children, categories }) => {
   return (
     <div className="flex justify-center bg-gray-200">
       <div className="flex flex-col min-h-screen w-full">
-        <Navbar />
+        <Navbar categories={categories} />
         <CategoryButtons categories={categories} />
         <div className="flex-grow">{children}</div>
         <Footer />

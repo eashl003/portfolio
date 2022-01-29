@@ -4,7 +4,7 @@ import { Menu, Transition } from "@headlessui/react"
 import { ChevronDownIcon } from "@heroicons/react/solid"
 import classNames from "classnames"
 
-function Navbar() {
+const Navbar = ({ categories = []}) => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
@@ -23,7 +23,7 @@ function Navbar() {
                       Blog
                     </Link>
                   </div>
-                  <div className="hover:font-bold rounded-md">
+                  <div className="rounded-md">
                     <Menu as="div" className="relative inline-block text-left">
                       <div>
                         <Menu.Button className="inline-flex justify-center w-full rounded-md shadow-sm px-4 py-2 text-sm font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500">
@@ -45,74 +45,29 @@ function Navbar() {
                       >
                         <Menu.Items className="text-black origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
                           <div className="py-1">
-                            <li>
-                              <Menu.Item>
-                                {({ active }) => (
-                                  <Link
-                                    href="#"
-                                    className={classNames(
-                                      active
-                                        ? "bg-gray-100 text-black"
-                                        : "text-black",
-                                      "block px-4 py-2 text-sm"
+                            <ul>
+                              {categories.map((_category) => {
+                                return (
+                                  <li className="ml-8 pt-2 pb-1 hover:font-bold">
+                                    <Menu.Item>
+                                    {({ active }) => (
+                                      <Link
+                                        href={`/categories/${_category.slug}`}
+                                        className={classNames(
+                                          active
+                                            ? "bg-gray-100 text-black"
+                                            : "text-black",
+                                          "block px-4 py-2 text-sm"
+                                        )}
+                                      >
+                                        {_category.name}
+                                      </Link>
                                     )}
-                                  >
-                                    All Posts
-                                  </Link>
-                                )}
-                              </Menu.Item>
-                            </li>
-                            <li>
-                              <Menu.Item>
-                                {({ active }) => (
-                                  <Link
-                                    href="#"
-                                    className={classNames(
-                                      active
-                                        ? "bg-gray-100 text-gray-900"
-                                        : "text-gray-700",
-                                      "block px-4 py-2 text-sm"
-                                    )}
-                                  >
-                                    Tech
-                                  </Link>
-                                )}
-                              </Menu.Item>
-                            </li>
-                            <li>
-                              <Menu.Item>
-                                {({ active }) => (
-                                  <Link
-                                    href="#"
-                                    className={classNames(
-                                      active
-                                        ? "bg-gray-100 text-gray-900"
-                                        : "text-gray-700",
-                                      "block px-4 py-2 text-sm"
-                                    )}
-                                  >
-                                    Career
-                                  </Link>
-                                )}
-                              </Menu.Item>
-                            </li>
-                            <form method="POST" action="#">
-                              <Menu.Item>
-                                {({ active }) => (
-                                  <button
-                                    type="submit"
-                                    className={classNames(
-                                      active
-                                        ? "bg-gray-100 text-gray-900"
-                                        : "text-gray-700",
-                                      "block w-full text-left px-4 py-2 text-sm"
-                                    )}
-                                  >
-                                    Lifestyle
-                                  </button>
-                                )}
-                              </Menu.Item>
-                            </form>
+                                    </Menu.Item>
+                                  </li>
+                                  )
+                                })}
+                            </ul>
                           </div>
                         </Menu.Items>
                       </Transition>
@@ -196,7 +151,7 @@ function Navbar() {
                   </li>
                   <li className="hover:font-bold text-white px-3 py-2 rounded-md text-sm font-medium">
                     <Link
-                      href="#"
+                      href="/shop"
                       className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
                     >
                       Shop
