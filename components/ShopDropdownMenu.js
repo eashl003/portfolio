@@ -3,6 +3,7 @@ import { Fragment } from "react"
 import { Menu, Transition } from "@headlessui/react"
 import { ChevronDownIcon } from "@heroicons/react/solid"
 import classNames from "classnames"
+import Link from "next/link"
 
 const ShopDropdownMenu = ({ categories = [] }) => {
   return (
@@ -26,58 +27,38 @@ const ShopDropdownMenu = ({ categories = [] }) => {
           <div className="py-1">
             <Menu.Item>
               {({ active }) => (
-                <a
+                <Link
                   href="#"
                   className={classNames(
                     active ? "bg-gray-100 text-gray-900" : "text-gray-700",
                     "block px-4 py-2 text-sm"
                   )}
                 >
-                  Account settings
-                </a>
+                  Shop All
+                </Link>
               )}
             </Menu.Item>
-            <Menu.Item>
-              {({ active }) => (
-                <a
-                  href="#"
-                  className={classNames(
-                    active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                    "block px-4 py-2 text-sm"
-                  )}
-                >
-                  Support
-                </a>
-              )}
-            </Menu.Item>
-            <Menu.Item>
-              {({ active }) => (
-                <a
-                  href="#"
-                  className={classNames(
-                    active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                    "block px-4 py-2 text-sm"
-                  )}
-                >
-                  License
-                </a>
-              )}
-            </Menu.Item>
-            <form method="POST" action="#">
-              <Menu.Item>
-                {({ active }) => (
-                  <button
-                    type="submit"
-                    className={classNames(
-                      active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                      "block w-full text-left px-4 py-2 text-sm"
+            <ul className="text-black ml-8">
+              {categories.map((_category) => {
+                return (
+                  <li key={_category.id}>
+                    <Menu.Item>
+                      {({ active }) => (
+                        <Link
+                        href={`/categories/${_category.slug}`}
+                          className={classNames(
+                            active ? "bg-gray-100 text-black" : "text-black",
+                            "block px-4 py-2 text-sm"
+                        )}
+                        >
+                          {_category.name}
+                        </Link>
                     )}
-                  >
-                    Sign out
-                  </button>
-                )}
-              </Menu.Item>
-            </form>
+                    </Menu.Item>
+                </li>
+                )
+            })}
+            </ul>
           </div>
         </Menu.Items>
       </Transition>
