@@ -1,6 +1,6 @@
 import { getProducts } from "../utils/api"
 import Link from "next/link"
-import Image from "../components/Image"
+import Image from "next/image"
 
 const HomePage = ({ products }) => {
   return (
@@ -37,6 +37,8 @@ const HomePage = ({ products }) => {
               className="object-cover object-center rounded"
               alt="hero"
               src="https://res.cloudinary.com/dj3qdir59/image/upload/v1642443909/altumcode-mCj7UinqOYQ-unsplash_ycf0uu.jpg"
+              width="550"
+              height="700"
             />
           </div>
         </div>
