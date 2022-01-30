@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import Link from "next/link"
 import { Transition } from "@headlessui/react"
+import ShopDropdownMenu from "./ShopDropdownMenu"
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -13,6 +14,9 @@ function Navbar() {
             <div className="flex items-center">
               <div className="flex-shrink-0 font-menlo text-3xl absolute top-4 ml-10 left-0 hover:font-bold">
                 elisabeth ashley
+              </div>
+              <div>
+                <ShopDropdownMenu />
               </div>
               <div className="hidden md:flex items-center md:flex-1 lg:w-">
                 <div className="ml-10 flex items-baseline space-x-4">
