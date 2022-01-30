@@ -15,9 +15,6 @@ const Navbar = ({ categories = [] }) => {
               <div className="flex-shrink-0 font-menlo text-3xl absolute top-4 ml-10 left-0 hover:font-bold">
                 elisabeth ashley
               </div>
-              <div>
-                <ShopDropdownMenu categories={categories} />
-              </div>
               <div className="hidden md:flex items-center md:flex-1 lg:w-">
                 <div className="ml-10 flex items-baseline space-x-4">
                   <div className="hover:font-bold rounded-md">
@@ -25,11 +22,7 @@ const Navbar = ({ categories = [] }) => {
                       Blog
                     </Link>
                   </div>
-                  <div className="hover:font-bold rounded-md">
-                    <Link href="#" passHref>
-                      Shop
-                    </Link>
-                  </div>
+                  <ShopDropdownMenu categories={categories} />
                   <div className="hover:font-bold rounded-md">
                     <Link href="#">Projects</Link>
                   </div>
@@ -43,7 +36,7 @@ const Navbar = ({ categories = [] }) => {
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                className="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >
