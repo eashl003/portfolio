@@ -13,7 +13,29 @@ const Navbar = ({ categories = [], blogs = [] }) => {
           <div className="flex items-center justify-end h-20">
             <div className="flex items-center">
               <div className="flex-shrink-0 font-menlo text-3xl absolute top-4 ml-10 left-0 hover:font-bold">
-                elisabeth ashley
+                <p className="brand" id="p-id" aria-label="CodePen">
+                  <span id="span-id" data-text="E">
+                    E
+                  </span>
+                  <span id="span-id" data-text="L">
+                    L
+                  </span>
+                  <span id="span-id" data-text="I">
+                    I
+                  </span>
+                  <span id="span-id" data-text="S">
+                    S
+                  </span>
+                  <span id="span-id" data-text="A">
+                    A
+                  </span>
+                  <span id="span-id" data-text="B">
+                    B
+                  </span>
+                  <span id="span-id" data-text="E">
+                    E
+                  </span>
+                </p>
               </div>
               <div className="hidden md:flex items-center md:flex-1 lg:w-">
                 <div className="ml-10 flex items-baseline space-x-4">

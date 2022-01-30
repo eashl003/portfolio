@@ -32,13 +32,13 @@ const HomePage = ({ products }) => {
               </Link>
             </div>
           </div>
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+          <div className="-mt-8 lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
             <Image
               className="object-cover object-center rounded"
               alt="hero"
               src="https://res.cloudinary.com/dj3qdir59/image/upload/v1642443909/altumcode-mCj7UinqOYQ-unsplash_ycf0uu.jpg"
               width="550"
-              height="700"
+              height="750"
             />
           </div>
         </div>

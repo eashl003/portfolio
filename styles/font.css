@@ -1,0 +1,84 @@
+#p-id {
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+#p-id #span-id {
+  display: inline-block;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 500px;
+  -webkit-font-smoothing: antialiased;
+}
+
+#p-id #span-id::before,
+#p-id #span-id::after {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -1px;
+  transform-origin: left top;
+  transition: all ease-out .3s;
+  content: attr(data-text);
+}
+
+#p-id #span-id::before {
+  z-index: 1;
+  color: rgba(0,0,0,0.2);
+  transform: scale(1.1,1) skew(0deg,20deg);
+}
+
+#p-id #span-id::after {
+  z-index: 2;
+  color: rgba(133, 197, 178);
+  text-shadow: -1px 0 1px #3498db,
+                1px 0 1px #fff;
+  transform: rotateY(-40deg);
+}
+
+#p-id #span-id:hover::before { transform: scale(1.1,1) skew(0deg,5deg); }
+
+#p-id #span-id:hover::after { transform: rotateY(-10deg); }
+
+#p-id #span-id + #span-id { margin-left: .3em; }
+
+@media (min-width: 20em) {
+  #p-id { font-size: 20px; }
+
+  #p-id #span-id::before,
+  #p-id #span-id::after {
+    display: block;
+  }
+}
+
+@media (min-width: 30em) {
+  #p-id { font-size: 20px; }
+}
+
+@media (min-width: 40em) {
+  #p-id { font-size: 23px; }
+}
+
+@media (min-width: 60em) {
+  #p-id { font-size: 25px; }
+} 
+
+.brand {
+  margin-left: 40%;
+}
+/*
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3498db;
+}
+*/

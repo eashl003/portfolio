@@ -3,6 +3,7 @@ import Head from "next/head"
 import Layout from "../components/Layout"
 import { getCategories, getBlogs } from "../utils/api"
 import "../styles/index.css"
+import "../styles/font.css"
 
 const MyApp = ({ Component, pageProps }) => (
   <Layout categories={pageProps.categories} blogs={pageProps.blogs}>
