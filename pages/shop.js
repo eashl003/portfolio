@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import ProductsList from "../components/ProductsList"
 import { getProducts } from "../utils/api"
 import CategoryButtons from "../components/CategoryButtons"
