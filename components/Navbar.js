@@ -24,8 +24,6 @@ function Navbar() {
                     <Link href="#" passHref>
                       Shop
                     </Link>
-
-
                   </div>
                   <div className="hover:font-bold rounded-md">
                     <Link href="#">Projects</Link>
