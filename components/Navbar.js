@@ -1,9 +1,10 @@
-import React, { useState, useRef } from "react"
+import React, { useState } from "react"
 import Link from "next/link"
 import { Transition } from "@headlessui/react"
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false)
   return (
     <div>
       <nav className="bg-teal-800 text-white">
