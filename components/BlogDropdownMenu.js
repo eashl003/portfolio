@@ -5,7 +5,7 @@ import { ChevronDownIcon } from "@heroicons/react/solid"
 import classNames from "classnames"
 import Link from "next/link"
 
-const BlogDropdownMenu = ({ categories = [] }) => {
+const BlogDropdownMenu = ({ blogs = [] }) => {
   return (
     <Menu as="div" className="relative inline-block text-left">
         <div>
@@ -41,19 +41,19 @@ const BlogDropdownMenu = ({ categories = [] }) => {
                     </Menu.Item>
                 </ul>
                 <ul className="text-black ml-8">
-                {categories.map((_category) => {
+                {blogs.map((_blog) => {
                     return (
-                    <li key={_category.id}>
+                    <li key={_blog.id}>
                         <Menu.Item>
                         {({ active }) => (
                             <Link
-                            href={`/categories/${_category.slug}`}
+                            href={`/blogs/${_blog.slug}`}
                             className={classNames(
                                 active ? "bg-gray-100 text-black" : "text-black",
                                 "block px-4 py-2 text-sm"
                             )}
                             >
-                            {_category.name}
+                            {_blog.name}
                             </Link>
                         )}
                         </Menu.Item>

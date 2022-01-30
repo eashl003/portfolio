@@ -4,7 +4,7 @@ import { Transition } from "@headlessui/react"
 import ShopDropdownMenu from "./ShopDropdownMenu"
 import BlogDropdownMenu from "./BlogDropdownMenu"
 
-const Navbar = ({ categories = [] }) => {
+const Navbar = ({ categories = [], blogs = [] }) => {
   const [isOpen, setIsOpen] = useState(false)
   return (
     <div>
@@ -17,7 +17,7 @@ const Navbar = ({ categories = [] }) => {
               </div>
               <div className="hidden md:flex items-center md:flex-1 lg:w-">
                 <div className="ml-10 flex items-baseline space-x-4">
-                  <BlogDropdownMenu categories={categories} />
+                  <BlogDropdownMenu blogs={blogs} />
                   <ShopDropdownMenu categories={categories} />
                   <div className="hover:font-bold rounded-md">
                     <Link href="#">Projects</Link>
