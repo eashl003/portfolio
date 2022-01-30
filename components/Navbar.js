@@ -2,10 +2,10 @@ import React, { useState } from "react"
 import Link from "next/link"
 import { Transition } from "@headlessui/react"
 import ShopDropdownMenu from "./ShopDropdownMenu"
+import BlogDropdownMenu from "./BlogDropdownMenu"
 
 const Navbar = ({ categories = [] }) => {
   const [isOpen, setIsOpen] = useState(false)
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false)
   return (
     <div>
       <nav className="bg-teal-800 text-white">
@@ -17,11 +17,7 @@ const Navbar = ({ categories = [] }) => {
               </div>
               <div className="hidden md:flex items-center md:flex-1 lg:w-">
                 <div className="ml-10 flex items-baseline space-x-4">
-                  <div className="hover:font-bold rounded-md">
-                    <Link href="/blog" passHref>
-                      Blog
-                    </Link>
-                  </div>
+                  <BlogDropdownMenu categories={categories} />
                   <ShopDropdownMenu categories={categories} />
                   <div className="hover:font-bold rounded-md">
                     <Link href="#">Projects</Link>
