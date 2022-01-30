@@ -3,7 +3,7 @@ import Link from "next/link"
 import { Transition } from "@headlessui/react"
 import ShopDropdownMenu from "./ShopDropdownMenu"
 
-function Navbar() {
+const Navbar = ({ categories = [] }) => {
   const [isOpen, setIsOpen] = useState(false)
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
   return (
@@ -16,7 +16,7 @@ function Navbar() {
                 elisabeth ashley
               </div>
               <div>
-                <ShopDropdownMenu />
+                <ShopDropdownMenu categories={categories} />
               </div>
               <div className="hidden md:flex items-center md:flex-1 lg:w-">
                 <div className="ml-10 flex items-baseline space-x-4">
