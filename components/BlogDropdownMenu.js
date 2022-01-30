@@ -35,7 +35,7 @@ const BlogDropdownMenu = ({ blogs = [] }) => {
                         "block px-4 py-2 text-sm"
                     )}
                     >
-                    Shop All
+                    Shop Al
                     </Link>
                     )}
                     </Menu.Item>
