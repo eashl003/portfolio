@@ -1,12 +1,9 @@
-import React, { useState, useEffect, Fragment } from "react"
+import React, { useState, useRef } from "react"
 import Link from "next/link"
-import { Menu, Transition } from "@headlessui/react"
-import { ChevronDownIcon } from "@heroicons/react/solid"
-import classNames from "classnames"
+import { Transition } from "@headlessui/react"
 
-const Navbar = ({ categories = [], blogs = [] }) => {
+function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
-
   return (
     <div>
       <nav className="bg-teal-800 text-white">
@@ -14,85 +11,23 @@ const Navbar = ({ categories = [], blogs = [] }) => {
           <div className="flex items-center justify-end h-20">
             <div className="flex items-center">
               <div className="flex-shrink-0 font-menlo text-3xl absolute top-4 ml-10 left-0 hover:font-bold">
-                <Link href="/" passHref>
-                  elisabeth ashleyy
-                </Link>
+                elisabeth ashley
               </div>
               <div className="hidden md:flex items-center md:flex-1 lg:w-">
                 <div className="ml-10 flex items-baseline space-x-4">
-                  <div className="rounded-md z-10">
-                    <Menu as="div" className="relative inline-block text-left">
-                      <div>
-                        <Menu.Button className="inline-flex justify-center w-full rounded-md shadow-sm px-4 py-2 text-lg font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500">
-                          Shop
-                          <ChevronDownIcon
-                            className="-mr-1 pt-1 ml-1 h-6 w-6"
-                            aria-hidden="true"
-                          />
-                        </Menu.Button>
-                      </div>
-                      <Transition
-                        as={Fragment}
-                        enter="transition ease-out duration-100"
-                        enterFrom="transform opacity-0 scale-95"
-                        enterTo="transform opacity-100 scale-100"
-                        leave="transition ease-in duration-75"
-                        leaveFrom="transform opacity-100 scale-100"
-                        leaveTo="transform opacity-0 scale-95"
-                      >
-                        <Menu.Items className="text-black origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
-                          <div className="py-1">
-                            <ul>
-                              <li className="ml-8 pt-2 pb-1 hover:font-bold">
-                                <Menu.Item>
-                                  {({ active }) => (
-                                    <Link
-                                      href="/shop"
-                                      className={classNames(
-                                        active
-                                          ? "bg-gray-100 text-gray-900"
-                                          : "text-gray-700",
-                                        "block px-4 py-2 text-sm"
-                                      )}
-                                    >
-                                      Shop All
-                                    </Link>
-                                  )}
-                                </Menu.Item>
-                              </li>
-                            </ul>
-                            <ul>
-                              {categories.map((_category) => {
-                                return (
-                                  <li
-                                    className="ml-8 pt-2 pb-1 hover:font-bold"
-                                    key={_category.id}
-                                  >
-                                    <Menu.Item>
-                                      {({ active }) => (
-                                        <Link
-                                          href={`/categories/${_category.slug}`}
-                                          className={classNames(
-                                            active
-                                              ? "bg-gray-100 text-black"
-                                              : "text-black",
-                                            "block px-4 py-2 text-sm"
-                                          )}
-                                        >
-                                          {_category.name}
-                                        </Link>
-                                      )}
-                                    </Menu.Item>
-                                  </li>
-                                )
-                              })}
-                            </ul>
-                          </div>
-                        </Menu.Items>
-                      </Transition>
-                    </Menu>
+                  <div className="hover:font-bold rounded-md">
+                    <Link href="/blog" passHref>
+                      Blog
+                    </Link>
                   </div>
-                  <div className="hover:text-black">
+                  <div className="hover:font-bold rounded-md">
+                    <Link href="#" passHref>
+                      Shop
+                    </Link>
+
+
+                  </div>
+                  <div className="hover:font-bold rounded-md">
                     <Link href="#">Projects</Link>
                   </div>
                   <div className="">
@@ -170,7 +105,7 @@ const Navbar = ({ categories = [], blogs = [] }) => {
                   </li>
                   <li className="hover:font-bold text-white px-3 py-2 rounded-md text-sm font-medium">
                     <Link
-                      href="/shop"
+                      href="#"
                       className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
                     >
                       Shop
