@@ -3,6 +3,7 @@ import Link from "next/link"
 import { Transition } from "@headlessui/react"
 import ShopDropdownMenu from "./ShopDropdownMenu"
 import BlogDropdownMenu from "./BlogDropdownMenu"
+import AboutMenu from "./AboutMenu"
 
 const Navbar = ({ categories = [], blogs = [] }) => {
   const [isOpen, setIsOpen] = useState(false)
@@ -48,9 +49,9 @@ const Navbar = ({ categories = [], blogs = [] }) => {
                   <BlogDropdownMenu blogs={blogs} />
                   <ShopDropdownMenu categories={categories} />
                   <div className="rounded-md ml-8 mr-10">
-                    <Link href="#">Projects</Link>
+                    <AboutMenu />
                   </div>
-                  <div className="">
+                  <div className="blur-md invert drop-shadow-xl md:filter-none">
                     <Link href="#">About</Link>
                   </div>
                 </div>
