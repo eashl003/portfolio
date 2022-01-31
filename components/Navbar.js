@@ -48,10 +48,8 @@ const Navbar = ({ categories = [], blogs = [] }) => {
                 <div className="ml-10 flex items-baseline space-x-4">
                   <BlogDropdownMenu blogs={blogs} />
                   <ShopDropdownMenu categories={categories} />
-                  <div className="rounded-md ml-8 mr-10">
-                    <AboutMenu />
-                  </div>
-                  <div className="blur-md invert drop-shadow-xl md:filter-none">
+                  <div className="rounded-md ml-8 mr-10">Projects</div>
+                  <div className="blur-md ml-8 invert drop-shadow-xl md:filter-none">
                     <Link href="#">About</Link>
                   </div>
                 </div>
