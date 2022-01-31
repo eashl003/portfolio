@@ -34,7 +34,7 @@ const HomePage = ({ products }) => {
             </div>
           </div>
           <div className="-mt-8 lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-          <AboutMenu />
+            <AboutMenu />
           </div>
         </div>
       </section>
