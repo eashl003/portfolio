@@ -14,26 +14,33 @@ const Navbar = ({ categories = [], blogs = [] }) => {
             <div className="flex items-center">
               <div className="flex-shrink-0 font-menlo text-3xl absolute top-4 ml-10 left-0 hover:font-bold">
                 <p className="brand" id="p-id" aria-label="CodePen">
-                  <span id="span-id" data-text="E">
-                    E
-                  </span>
-                  <span id="span-id" data-text="L">
+                  <span className="liz" id="span-id" data-text="L">
                     L
                   </span>
-                  <span id="span-id" data-text="I">
+                  <span className="liz" id="span-id" data-text="I">
                     I
+                  </span>
+                  <span className="liz" id="span-id" data-text="Z">
+                    Z
+                  </span>
+                  <span id="span-id">&nbsp;</span>
+                  <span id="span-id" data-text="A">
+                    A
                   </span>
                   <span id="span-id" data-text="S">
                     S
                   </span>
-                  <span id="span-id" data-text="A">
-                    A
+                  <span id="span-id" data-text="H">
+                    H
                   </span>
-                  <span id="span-id" data-text="B">
-                    B
+                  <span id="span-id" data-text="L">
+                    L
                   </span>
                   <span id="span-id" data-text="E">
                     E
+                  </span>
+                  <span id="span-id" data-text="Y">
+                    Y
                   </span>
                 </p>
               </div>

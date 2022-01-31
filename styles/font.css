@@ -35,7 +35,11 @@
   color: rgba(133, 197, 178);
   text-shadow: -1px 0 1px #3498db,
                 1px 0 1px #fff;
-  transform: rotateY(-40deg);
+  transform: rotateY(-33deg);
+}
+
+.liz {
+  transform: rotateY(-12deg) !important;
 }
 
 #p-id #span-id:hover::before { transform: scale(1.1,1) skew(0deg,5deg); }
@@ -62,11 +66,12 @@
 }
 
 @media (min-width: 60em) {
-  #p-id { font-size: 25px; }
+  #p-id { font-size: 50px; }
 } 
 
 .brand {
-  margin-left: 40%;
+  margin-left: 3%;
+  width: 100%;
 }
 /*
 html, body {
