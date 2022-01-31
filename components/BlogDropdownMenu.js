@@ -7,9 +7,9 @@ import Link from "next/link"
 
 const BlogDropdownMenu = ({ blogs = [] }) => {
   return (
-    <Menu as="div" className="relative inline-block text-left">
+    <Menu as="div" className="z-10 relative inline-block text-left">
         <div>
-            <Menu.Button className="inline-flex justify-center w-full px-4 py-2 text-lg font-medium hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500">
+            <Menu.Button className="inline-flex justify-center w-full px-4 py-2 text-xl font-medium hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500">
             Blog
             <ChevronDownIcon className="-mr-1 ml-2 mt-1 h-5 w-5" aria-hidden="true" />
             </Menu.Button>

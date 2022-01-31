@@ -257,7 +257,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ["Roboto", "sans-serif"],
+        sans: ["Roboto", "sans-serif", "Oswald"],
         serif: ["Georgia", "Cambria", '"Times New Roman"', "Times", "serif"],
         mono: [
           "Menlo",

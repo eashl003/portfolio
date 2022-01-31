@@ -8,39 +8,38 @@ const Navbar = ({ categories = [], blogs = [] }) => {
   const [isOpen, setIsOpen] = useState(false)
   return (
     <div>
-      <nav className="bg-teal-800 text-white">
+      <nav className="bg-teal-800 text-white text-xl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-end h-20">
             <div className="flex items-center">
               <div className="flex-shrink-0 font-menlo text-3xl absolute top-4 ml-10 left-0 hover:font-bold">
-                <p className="brand" id="p-id" aria-label="CodePen">
-                  <span className="liz" id="span-id" data-text="L">
+                <p className="brand" id="p-id" aria-label="brand-name">
+                  <span id="span-id" data-text="E">
+                    E
+                  </span>
+                  <span id="span-id" data-text="L">
                     L
                   </span>
                   <span className="liz" id="span-id" data-text="I">
                     I
                   </span>
-                  <span className="liz" id="span-id" data-text="Z">
-                    Z
-                  </span>
-                  <span id="span-id">&nbsp;</span>
-                  <span id="span-id" data-text="A">
-                    A
-                  </span>
                   <span id="span-id" data-text="S">
                     S
                   </span>
-                  <span id="span-id" data-text="H">
-                    H
+                  <span id="span-id" data-text="A">
+                    A
                   </span>
-                  <span id="span-id" data-text="L">
-                    L
+                  <span id="span-id" data-text="B">
+                    B
                   </span>
                   <span id="span-id" data-text="E">
                     E
                   </span>
-                  <span id="span-id" data-text="Y">
-                    Y
+                  <span id="span-id" data-text="T">
+                    T
+                  </span>
+                  <span id="span-id" data-text="H">
+                    H
                   </span>
                 </p>
               </div>
@@ -48,7 +47,7 @@ const Navbar = ({ categories = [], blogs = [] }) => {
                 <div className="ml-10 flex items-baseline space-x-4">
                   <BlogDropdownMenu blogs={blogs} />
                   <ShopDropdownMenu categories={categories} />
-                  <div className="hover:font-bold rounded-md">
+                  <div className="rounded-md ml-8 mr-10">
                     <Link href="#">Projects</Link>
                   </div>
                   <div className="">
@@ -132,13 +131,8 @@ const Navbar = ({ categories = [], blogs = [] }) => {
                       Shop
                     </Link>
                   </li>
-                  <li className="hover:font-bold text-white px-3 py-2 rounded-md text-sm font-medium">
-                    <Link
-                      href="#"
-                      className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                    >
-                      Projects
-                    </Link>
+                  <li className="text-white px-3 py-2 rounded-md text-sm">
+                    <Link href="#">Projects</Link>
                   </li>
                   <li className="hover:font-bold text-white px-3 py-2 rounded-md text-sm font-medium">
                     <Link
