@@ -23,12 +23,12 @@ export async function getCategory(slug) {
 }
 
 export async function getProducts() {
-  const products = await setTimeout(fetchAPI("/products"), 300)
+  const products = await fetchAPI("/products")
   return products
 }
 
 export async function getProduct(slug) {
-  const products = await setTimeout(fetchAPI(`/products?slug=${slug}`), 300)
+  const products = await setTimeOut(fetchAPI(`/products?slug=${slug}`), 200)
   return products?.[0]
 }
 
