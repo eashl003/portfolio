@@ -28,7 +28,7 @@ export async function getProducts() {
 }
 
 export async function getProduct(slug) {
-  const products = await setTimeOut(fetchAPI(`/products?slug=${slug}`), 200)
+  const products = await fetchAPI(`/products?slug=${slug}`)
   return products?.[0]
 }
 
