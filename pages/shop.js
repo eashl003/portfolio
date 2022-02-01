@@ -12,12 +12,9 @@ const ShopPage = ({ products, categories }) => {
   )
 }
 
- 
 export async function getStaticProps() {
   const products = await getProducts()
   return { props: { products } }
 }
-
-setTimeout(getStaticProps, 3000);
 
 export default ShopPage
