@@ -47,9 +47,6 @@ export async function getArticles() {
   return articles
 }
 
-setTimeout(getProducts, 1000)
-setTimeout(getProduct, 1000)
-
 export async function getArticle(slug) {
   const articles = await fetchAPI(`/articles?slug=${slug}`)
   return articles?.[0]
