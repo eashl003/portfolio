@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import ProductsList from "../components/ProductsList"
 import { getProducts } from "../utils/api"
 import CategoryButtons from "../components/CategoryButtons"
@@ -13,7 +12,8 @@ const ShopPage = ({ products, categories }) => {
 }
 
 export async function getStaticProps() {
-  const products = setTimeout(await getProducts(), 3000)
+  const products = setTimeout(getProducts(), 1000)
+
   return { props: { products } }
 }
 
