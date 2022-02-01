@@ -25,7 +25,7 @@ const ShopDropdownMenu = ({ categories = [] }) => {
         >
             <Menu.Items className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
             <div className="py-1">
-            <ul className="text-black ml-8">
+            <ul className="text-black ml-8 hover:font-bold">
                 <Menu.Item>
                     {({ active }) => (
                     <Link
@@ -43,7 +43,7 @@ const ShopDropdownMenu = ({ categories = [] }) => {
                 <ul className="text-black ml-8">
                 {categories.map((_category) => {
                     return (
-                    <li key={_category.id}>
+                    <li key={_category.id} className="hover:font-bold">
                         <Menu.Item>
                         {({ active }) => (
                             <Link

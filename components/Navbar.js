@@ -13,7 +13,7 @@ const Navbar = ({ categories = [], blogs = [] }) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-end h-20">
             <div className="flex items-center">
-              <div className="flex-shrink-0 font-menlo text-3xl absolute top-4 ml-10 left-0 hover:font-bold">
+              <div className="flex-shrink-0 font-menlo text-3xl absolute top-4 ml-10 left-0">
                 <p className="brand" id="p-id" aria-label="brand-name">
                   <span id="span-id" data-text="E">
                     E
@@ -45,12 +45,12 @@ const Navbar = ({ categories = [], blogs = [] }) => {
                 </p>
               </div>
               <div className="hidden md:flex items-center md:flex-1 lg:w-">
-                <div className="ml-10 flex items-baseline space-x-4">
+                <div className="ml-10 flex items-baseline">
                   <BlogDropdownMenu blogs={blogs} />
                   <ShopDropdownMenu categories={categories} />
-                  <div className="rounded-md ml-8 mr-10">Projects</div>
+                  <div className="rounded-md ml-4">Projects</div>
                   <div className="blur-md ml-8 invert drop-shadow-xl md:filter-none">
-                    <Link href="#">About</Link>
+                    <Link href="/about">About</Link>
                   </div>
                 </div>
               </div>
@@ -114,21 +114,13 @@ const Navbar = ({ categories = [], blogs = [] }) => {
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <ul>
-                  <li className="hover:font-bold text-white px-3 py-2 rounded-md text-sm font-medium">
-                    <Link
-                      href="#"
-                      className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
-                    >
+                  <ul className="hover:font-bold">
+                    <li className="hover:font-bold text-white px-3 py-2 rounded-md text-sm font-medium">
                       Blog
-                    </Link>
-                  </li>
+                    </li>
+                  </ul>
                   <li className="hover:font-bold text-white px-3 py-2 rounded-md text-sm font-medium">
-                    <Link
-                      href="#"
-                      className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
-                    >
-                      Shop
-                    </Link>
+                    Shop
                   </li>
                   <li className="text-white px-3 py-2 rounded-md text-sm">
                     <Link href="#">Projects</Link>
