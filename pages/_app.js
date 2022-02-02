@@ -4,6 +4,7 @@ import Layout from "../components/Layout"
 import { getCategories, getBlogs } from "../utils/api"
 import "../styles/index.css"
 import "../styles/font.css"
+import "../styles/menuButtons.scss"
 
 const MyApp = ({ Component, pageProps }) => (
   <Layout categories={pageProps.categories} blogs={pageProps.blogs}>

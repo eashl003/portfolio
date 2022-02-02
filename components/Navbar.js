@@ -14,35 +14,37 @@ const Navbar = ({ categories = [], blogs = [] }) => {
           <div className="flex items-center justify-end h-20">
             <div className="flex items-center">
               <div className="flex-shrink-0 font-menlo text-3xl absolute top-4 ml-10 left-0">
-                <p className="brand" id="p-id" aria-label="brand-name">
-                  <span id="span-id" data-text="E">
-                    E
-                  </span>
-                  <span id="span-id" data-text="L">
-                    L
-                  </span>
-                  <span className="liz" id="span-id" data-text="I">
-                    I
-                  </span>
-                  <span id="span-id" data-text="S">
-                    S
-                  </span>
-                  <span id="span-id" data-text="A">
-                    A
-                  </span>
-                  <span id="span-id" data-text="B">
-                    B
-                  </span>
-                  <span id="span-id" data-text="E">
-                    E
-                  </span>
-                  <span id="span-id" data-text="T">
-                    T
-                  </span>
-                  <span id="span-id" data-text="H">
-                    H
-                  </span>
-                </p>
+                <Link href="/" passHref>
+                  <p className="brand" id="p-id" aria-label="brand-name">
+                    <span id="span-id" data-text="E">
+                      E
+                    </span>
+                    <span id="span-id" data-text="L">
+                      L
+                    </span>
+                    <span className="liz" id="span-id" data-text="I">
+                      I
+                    </span>
+                    <span id="span-id" data-text="S">
+                      S
+                    </span>
+                    <span id="span-id" data-text="A">
+                      A
+                    </span>
+                    <span id="span-id" data-text="B">
+                      B
+                    </span>
+                    <span id="span-id" data-text="E">
+                      E
+                    </span>
+                    <span id="span-id" data-text="T">
+                      T
+                    </span>
+                    <span id="span-id" data-text="H">
+                      H
+                    </span>
+                  </p>
+                </Link>
               </div>
               <div className="hidden md:flex items-center md:flex-1 lg:w-">
                 <div className="ml-10 flex items-baseline">

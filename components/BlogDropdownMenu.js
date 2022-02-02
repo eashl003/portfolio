@@ -8,12 +8,12 @@ import Link from "next/link"
 const BlogDropdownMenu = ({ blogs = [] }) => {
   return (
     <Menu as="div" className="z-10 relative inline-block text-left">
-        <div id="menu-btn" className="rounded-lg"> 
+        <button className="btn draw-outline">  
             <Menu.Button className="inline-flex justify-center w-full px-4 py-2 text-xl font-medium">
             Blog
             <ChevronDownIcon className="-mr-1 ml-2 mt-1 h-5 w-5" aria-hidden="true" />
             </Menu.Button>
-        </div>
+        </button>
         <Transition
             as={Fragment}
             enter="transition ease-out duration-100"
