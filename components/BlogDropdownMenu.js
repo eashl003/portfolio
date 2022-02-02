@@ -8,12 +8,10 @@ import Link from "next/link"
 const BlogDropdownMenu = ({ blogs = [] }) => {
   return (
     <Menu as="div" className="z-10 relative inline-block text-left">
-        <button className="btn draw-outline">  
-            <Menu.Button className="inline-flex justify-center w-full px-4 py-2 text-xl font-medium">
-            Blog
-            <ChevronDownIcon className="-mr-1 ml-2 mt-1 h-5 w-5" aria-hidden="true" />
-            </Menu.Button>
-        </button>
+        <Menu.Button className="menu-btn uppercase inline-flex justify-center w-full px-4 py-2 text-teal-800 hover:text-teal-600">
+        Blog
+        <ChevronDownIcon className="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
+        </Menu.Button>
         <Transition
             as={Fragment}
             enter="transition ease-out duration-100"
@@ -23,9 +21,9 @@ const BlogDropdownMenu = ({ blogs = [] }) => {
             leaveFrom="transform opacity-100 scale-100"
             leaveTo="transform opacity-0 scale-95"
         >
-            <Menu.Items className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+            <Menu.Items className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white">
             <div className="py-1">
-            <ul className="text-black ml-8 hover:font-bold">
+            <ul className="text-teal-800 ml-8 hover:font-bold">
                 <Menu.Item>
                     {({ active }) => (
                     <Link
@@ -40,7 +38,7 @@ const BlogDropdownMenu = ({ blogs = [] }) => {
                     )}
                     </Menu.Item>
                 </ul>
-                <ul className="text-black ml-8">
+                <ul className="text-teal-800 ml-8">
                 {blogs.map((_blog) => {
                     return (
                     <li key={_blog.id} className="hover:font-bold">

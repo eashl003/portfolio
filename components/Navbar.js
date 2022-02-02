@@ -8,8 +8,8 @@ import AboutMenu from "./AboutMenu"
 const Navbar = ({ categories = [], blogs = [] }) => {
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <div>
-      <nav className="text-grey text-xl">
+    <div className="sticky top-0 z-50 bg-white">
+      <nav className="text-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-end h-20">
             <div className="flex items-center">
@@ -50,8 +50,10 @@ const Navbar = ({ categories = [], blogs = [] }) => {
                 <div className="ml-10 flex items-baseline">
                   <BlogDropdownMenu blogs={blogs} />
                   <ShopDropdownMenu categories={categories} />
-                  <div className="rounded-md ml-4">Projects</div>
-                  <div className="blur-md ml-8 invert drop-shadow-xl md:filter-none">
+                  <div className="text-teal-800 ml-4 hover:text-teal-600 uppercase">
+                    Projects
+                  </div>
+                  <div className="ml-8 text-teal-800 hover:text-teal-600 uppercase">
                     <Link href="/about">About</Link>
                   </div>
                 </div>
