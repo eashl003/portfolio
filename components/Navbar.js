@@ -117,22 +117,22 @@ const Navbar = ({ categories = [], blogs = [] }) => {
           {(ref) => (
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <ul>
+                <ul className="uppercase text-teal-800 text-center">
                   <ul className="hover:font-bold">
-                    <li className="hover:font-bold text-white px-3 py-2 rounded-md text-sm font-medium">
+                    <li className="hover:font-bold px-3 py-2 rounded-md text-sm">
                       Blog
                     </li>
                   </ul>
-                  <li className="hover:font-bold text-white px-3 py-2 rounded-md text-sm font-medium">
+                  <li className="hover:font-bold px-3 py-2 rounded-md text-sm">
                     Shop
                   </li>
-                  <li className="text-white px-3 py-2 rounded-md text-sm">
+                  <li className="hover:font-bold px-3 py-2 rounded-md text-sm">
                     <Link href="#">Projects</Link>
                   </li>
-                  <li className="hover:font-bold text-white px-3 py-2 rounded-md text-sm font-medium">
+                  <li className="hover:font-bold px-3 py-2 rounded-md text-sm">
                     <Link
                       href="#"
-                      className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                      className="text-gray-300 hover:bg-gray-700 block px-3 py-2 rounded-md text-base"
                     >
                       About
                     </Link>

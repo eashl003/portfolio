@@ -1,20 +1,17 @@
-import ProductsList from "../components/ProductsList"
-import { getProducts } from "../utils/api"
-import CategoryButtons from "../components/CategoryButtons"
+import ArticlesList from "../components/ArticlesList"
+import { getArticles } from "../utils/api"
 
-const BlogPage = ({ products, categories }) => {
+const BlogPage = ({ articles }) => {
   return (
     <div>
-      <CategoryButtons categories={categories} />
-      <ProductsList products={products} />
+      <ArticlesList articles={articles} />
     </div>
   )
 }
 
 export async function getStaticProps() {
-  const products = await getProducts()
-
-  return { props: { products } }
+  const articles = await getArticles()
+  return { props: { articles } }
 }
 
 export default BlogPage

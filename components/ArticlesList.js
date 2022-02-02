@@ -27,7 +27,7 @@ const ArticlesList = ({ articles }) => {
                   </p>
                 </div>
                 <div className="hidden lg:block lg:w-1/2 mt-2 mb-2 mr-2">
-                  <NextImage media={_article.cover_image} />
+                  {/* <NextImage media={_article.cover_image} /> */}
                 </div>
               </div>
             </Link>

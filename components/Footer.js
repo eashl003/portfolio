@@ -3,9 +3,7 @@ import NextImage from "./Image"
 const Footer = () => {
   return (
     <div className="flex justify-between m-6">
-      <p className="text-xs font-semibold text-gray-600">
-        Strapi Starter Next.js E-commerce
-      </p>
+      <p className="text-xs font-semibold text-gray-600"></p>
       <div className="flex gap-3 ml-4">
         <a href="https://twitter.com/strapijs" className="max-w-xs ml-4">
           <NextImage src="/twitter.svg" width={20} height={20} alt="Twitter" />

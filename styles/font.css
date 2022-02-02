@@ -63,11 +63,11 @@
 }
 
 @media (min-width: 480px) {
-  #p-id { font-size: 20px; }
+  #p-id { font-size: 30px; }
 }
 
 @media (min-width: 40em) {
-  #p-id { font-size: 23px; }
+  #p-id { font-size: 30px; }
 }
 
 @media (min-width: 60em) {
