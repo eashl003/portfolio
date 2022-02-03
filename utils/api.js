@@ -54,3 +54,13 @@ export async function getArticle(slug) {
   const articles = await fetchAPI(`/articles?slug=${slug}`)
   return articles?.[0]
 }
+
+export async function getFeaturedArticles() {
+  const featuredArticles = await fetchAPI("/articles?featured=true")
+  return featuredArticles
+}
+
+export async function getRecentArticles() {
+  const recentArticles = await fetchAPI("/articles?_sort=date_created:DESC")
+  return recentArticles
+}
