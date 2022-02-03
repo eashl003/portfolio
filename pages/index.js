@@ -3,9 +3,10 @@ import Link from "next/link"
 import Image from "next/image"
 import AboutMenu from "../components/AboutMenu"
 import RecentArticlesList from "../components/RecentArticlesList"
+import FeaturedArticlesList from "../components/FeaturedArticlesList"
 import { getFeaturedArticles, getRecentArticles } from "../utils/api"
 
-const HomePage = ({ products, recentArticles }) => {
+const HomePage = ({ products, recentArticles, featuredArticles }) => {
   return (
     <div>
       <section id="top-section" className="text-gray-700 body-font">
@@ -40,7 +41,6 @@ const HomePage = ({ products, recentArticles }) => {
           </div>
         </div>
       </section>
-      {/* section section */}
       <div className="flex flex-col text-center w-full">
         <h1
           id="recent-post-title"
@@ -58,10 +58,9 @@ const HomePage = ({ products, recentArticles }) => {
             Most Popular Posts
           </h1>
         </div>
-        {/*
         <div id="featured" className="container pt-8 mx-auto flex flex-wrap">
-          <PopularPosts featuredArticles={featuredArticles}/>
-        </div>*/}
+          <FeaturedArticlesList featuredArticles={featuredArticles} />
+        </div>
       </section>
       <section className="text-gray-700 body-font">
         <div className="container px-5 py-24 mx-auto">
@@ -82,8 +81,9 @@ const HomePage = ({ products, recentArticles }) => {
 
 export async function getStaticProps() {
   const products = await getProducts()
+  const featuredArticles = await getFeaturedArticles()
   const recentArticles = await getRecentArticles()
-  return { props: { products, recentArticles } }
+  return { props: { products, recentArticles, featuredArticles } }
 }
 
 export default HomePage
