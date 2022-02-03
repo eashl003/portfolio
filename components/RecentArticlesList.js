@@ -1,23 +1,25 @@
 import Link from "next/link"
 import Image from "next/image"
+import NextImage from "./Image"
 
 const RecentArticlesList = ({ recentArticles }) => {
   return (
-    <div className="mt-6 mb-8 ml-6 grid md:grid-cols-3">
+    <div className="grid md:grid-cols-3 ml-8">
       {recentArticles.slice(0, 3).map((_recentArticle) => (
-        <div key={_recentArticle.id} className="grid mr-12">
-          <div className="rounded overflow-hidden shadow-lg flex flex-col mb-8">
-            <div className="px-6 py-4 mb-auto">
-              <div className="mb-3 text-xs font-bold category-name">
-                {_recentArticle.category_name}
-              </div>
-              <div className="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">
-                {_recentArticle.title}
-              </div>
-              <p id="article-descr" className="text-gray-500 text-sm">
-                {_recentArticle.description}
-              </p>
-            </div>
+        <div
+          key={_recentArticle.id}
+          className="max-w-sm rounded text-ellipsis overflow-hidden shadow-xl transform hover:translate-y-1 transition-all duration-200"
+        >
+          <div className="px-6 py-4">
+            <div className="font-bold text-xl mb-2">{_recentArticle.title}</div>
+            <p className="text-gray-700 text-base truncate">
+              {_recentArticle.description}
+            </p>
+          </div>
+          <div className="px-6 pt-4 pb-2">
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+              Continue reading
+            </span>
           </div>
         </div>
       ))}
