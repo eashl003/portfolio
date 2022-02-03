@@ -29,7 +29,7 @@ const ShopDropdownMenu = ({ categories = [] }) => {
                 <Menu.Item>
                     {({ active }) => (
                     <Link
-                    href="#"
+                    href="/shop"
                     className={classNames(
                         active ? "bg-gray-100 text-black" : "text-black",
                         "block px-4 py-2 text-sm"

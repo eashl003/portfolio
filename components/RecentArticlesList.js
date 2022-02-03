@@ -4,7 +4,7 @@ import Image from "next/image"
 const RecentArticlesList = ({ recentArticles }) => {
   return (
     <div className="mt-6 mb-8 ml-6 grid md:grid-cols-3">
-      {recentArticles.slice(0, 3).map((_recentArticle) => (
+      {recentArticles.map((_recentArticle) => (
         <div key={_recentArticle.id} className="grid mr-12">
           <div className="rounded overflow-hidden shadow-lg flex flex-col mb-8">
             <div className="px-6 py-4 mb-auto">
