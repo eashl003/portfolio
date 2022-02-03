@@ -44,7 +44,7 @@ const HomePage = ({ products, recentArticles, featuredArticles }) => {
       <div className="flex flex-col text-center w-full">
         <h1
           id="recent-post-title"
-          className="mb-6 sm:text-3xl text-2xl font-medium title-font text-gray-900"
+          className="mb-6 sm:text-3xl text-2xl font-medium title-font text-teal-700"
         >
           Recent Posts
         </h1>

@@ -4,11 +4,11 @@ import NextImage from "./Image"
 
 const RecentArticlesList = ({ recentArticles }) => {
   return (
-    <div className="grid md:grid-cols-3 ml-8">
+    <div className="flex space-x-12 justify-center  ">
       {recentArticles.slice(0, 3).map((_recentArticle) => (
         <div
           key={_recentArticle.id}
-          className="max-w-sm rounded text-ellipsis overflow-hidden shadow-xl transform hover:translate-y-1 transition-all duration-200"
+          className="max-w-sm rounded-2xl text-ellipsis overflow-hidden shadow-xl transform hover:translate-y-1 transition-all duration-200"
         >
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2">{_recentArticle.title}</div>
@@ -16,8 +16,8 @@ const RecentArticlesList = ({ recentArticles }) => {
               {_recentArticle.description}
             </p>
           </div>
-          <div className="px-6 pt-4 pb-2">
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+          <div className="px-6 pt-1 pb-2 mb-2">
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-2 text-sm font-semibold text-gray-700">
               Continue reading
             </span>
           </div>
