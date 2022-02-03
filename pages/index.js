@@ -2,8 +2,10 @@ import { getProducts } from "../utils/api"
 import Link from "next/link"
 import Image from "next/image"
 import AboutMenu from "../components/AboutMenu"
+import RecentArticlesList from "../components/RecentArticlesList"
+import { getFeaturedArticles, getRecentArticles } from "../utils/api"
 
-const HomePage = ({ products }) => {
+const HomePage = ({ products, recentArticles }) => {
   return (
     <div>
       <section id="top-section" className="text-gray-700 body-font">
@@ -47,9 +49,9 @@ const HomePage = ({ products }) => {
           Recent Posts
         </h1>
       </div>
-      {/*<section className="text-gray-700 body-font">
-        <RecentList recentArticles={recentArticles} />
-  </section>*/}
+      <section className="text-gray-700 body-font">
+        <RecentArticlesList recentArticles={recentArticles} />
+      </section>
       <section className="text-gray-700 body-font  mt-20">
         <div className="flex flex-col text-center w-full">
           <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">
@@ -80,7 +82,8 @@ const HomePage = ({ products }) => {
 
 export async function getStaticProps() {
   const products = await getProducts()
-  return { props: { products } }
+  const recentArticles = await getRecentArticles()
+  return { props: { products, recentArticles } }
 }
 
 export default HomePage
