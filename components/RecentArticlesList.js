@@ -12,7 +12,7 @@ const RecentArticlesList = ({ recentArticles }) => {
         >
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2">{_recentArticle.title}</div>
-            <p className="text-gray-700 text-base truncate">
+            <p className="text-gray-700 text-base line-clamp-4">
               {_recentArticle.description}
             </p>
           </div>
