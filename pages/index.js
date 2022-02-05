@@ -83,6 +83,7 @@ export async function getStaticProps() {
   const products = await getProducts()
   const featuredArticles = await getFeaturedArticles()
   const recentArticles = await getRecentArticles()
+
   return { props: { products, recentArticles, featuredArticles } }
 }
 
