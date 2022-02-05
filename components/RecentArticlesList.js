@@ -2,18 +2,6 @@ import Link from "next/link"
 import { buildUrl } from "cloudinary-build-url"
 import Image from "next/image"
 
-const url = buildUrl("213497931225767:POrrqMG3u2wVl3gzfn4D7C7BJxg@dj3qdir59", {
-  cloud: {
-    cloudName: "dj3qdir59",
-  },
-  transformations: {
-    effect: {
-      name: "pixelate",
-      value: 40,
-    },
-  },
-})
-
 const RecentArticlesList = ({ recentArticles }) => {
   return (
     <div className="md:flex space-x-12 justify-center   ">
