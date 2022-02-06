@@ -3,7 +3,6 @@ import Link from "next/link"
 import { Transition } from "@headlessui/react"
 import ShopDropdownMenu from "./ShopDropdownMenu"
 import BlogDropdownMenu from "./BlogDropdownMenu"
-import AboutMenu from "./AboutMenu"
 
 const Navbar = ({ categories = [], blogs = [] }) => {
   const [isOpen, setIsOpen] = useState(false)
@@ -119,7 +118,7 @@ const Navbar = ({ categories = [], blogs = [] }) => {
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <ul className="uppercase text-teal-800 text-center">
                   <ul className="hover:font-bold">
-                    <li >
+                    <li className="hover:font-bold px-3 py-2 mt-8 rounded-md text-sm">
                       Blog
                     </li>
                   </ul>
