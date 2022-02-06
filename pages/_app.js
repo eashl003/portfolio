@@ -13,6 +13,12 @@ const MyApp = ({ Component, pageProps }) => (
       <link rel="preconnect" href="https://cdn.snipcart.com" />
       <link
         rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+        crossOrigin="anonymous"
+      ></link>
+      <link
+        rel="stylesheet"
         href="https://cdn.snipcart.com/themes/v3.0.16/default/snipcart.css"
       />
       <script
