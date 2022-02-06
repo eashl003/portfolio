@@ -119,7 +119,7 @@ const Navbar = ({ categories = [], blogs = [] }) => {
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <ul className="uppercase text-teal-800 text-center">
                   <ul className="hover:font-bold">
-                    <li className="hover:font-bold px-3 py-2 rounded-md text-sm">
+                    <li >
                       Blog
                     </li>
                   </ul>

@@ -21,9 +21,9 @@ const BlogDropdownMenu = ({ blogs = [] }) => {
             leaveFrom="transform opacity-100 scale-100"
             leaveTo="transform opacity-0 scale-95"
         >
-            <Menu.Items className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white">
+            <Menu.Items className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white text-md uppercase">
             <div className="py-1">
-            <ul className="text-teal-800 ml-8 hover:font-bold">
+            <ul className="text-teal-800 ml-8 hover:text-teal-600 pt-4">
                 <Menu.Item>
                     {({ active }) => (
                     <Link
@@ -48,7 +48,7 @@ const BlogDropdownMenu = ({ blogs = [] }) => {
                             href={`/blogs/${_blog.slug}`}
                             className={classNames(
                                 active ? "bg-gray-100 text-black" : "text-black",
-                                "block px-4 py-2 text-sm"
+                                "block py-4 text-sm pt-4"
                             )}
                             >
                             {_blog.name}
