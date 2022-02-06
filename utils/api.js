@@ -22,9 +22,6 @@ export async function getCategory(slug) {
   return categories?.[0]
 }
 
-setTimeout(getCategory, 1000)
-setTimeout(getCategories, 1000)
-
 export async function getProducts() {
   const products = await fetchAPI("/products")
   return products
@@ -49,9 +46,6 @@ export async function getArticles() {
   const articles = await fetchAPI("/articles")
   return articles
 }
-
-setTimeout(getProducts, 1000)
-setTimeout(getProduct, 1000)
 
 export async function getArticle(slug) {
   const articles = await fetchAPI(`/articles?slug=${slug}`)
