@@ -1,5 +1,4 @@
 import Link from "next/link"
-import { buildUrl } from "cloudinary-build-url"
 import Image from "next/image"
 
 const RecentArticlesList = ({ recentArticles }) => {

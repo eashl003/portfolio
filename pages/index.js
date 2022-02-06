@@ -1,7 +1,6 @@
 import { getProducts } from "../utils/api"
 import Link from "next/link"
 import Image from "next/image"
-import AboutMenu from "../components/AboutMenu"
 import RecentArticlesList from "../components/RecentArticlesList"
 import FeaturedArticlesList from "../components/FeaturedArticlesList"
 import { getFeaturedArticles, getRecentArticles } from "../utils/api"
@@ -37,7 +36,13 @@ const HomePage = ({ products, recentArticles, featuredArticles }) => {
             </div>
           </div>
           <div className="-mt-8 lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <AboutMenu />
+            <Image
+              className="rounded"
+              alt="article"
+              src="https://res.cloudinary.com/dj3qdir59/image/upload/v1642443909/altumcode-mCj7UinqOYQ-unsplash_ycf0uu.jpg"
+              height="700"
+              width="520"
+            />
           </div>
         </div>
       </section>
@@ -52,16 +57,16 @@ const HomePage = ({ products, recentArticles, featuredArticles }) => {
       <section className="text-gray-700 body-font">
         <RecentArticlesList recentArticles={recentArticles} />
       </section>
-      <section className="text-gray-700 body-font  mt-20">
-        <div className="flex flex-col text-center w-full">
-          <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">
-            Most Popular Posts
-          </h1>
-        </div>
-        <div id="featured" className="container pt-8 mx-auto flex flex-wrap">
-          <FeaturedArticlesList featuredArticles={featuredArticles} />
-        </div>
-      </section>
+      {/* <section className="text-gray-700 body-font  mt-20"> */}
+      {/* <div className="flex flex-col text-center w-full"> */}
+      {/* <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900"> */}
+      {/* Most Popular Posts */}
+      {/* </h1> */}
+      {/* </div> */}
+      {/* <div id="featured" className="container pt-8 mx-auto flex flex-wrap"> */}
+      {/* <FeaturedArticlesList featuredArticles={featuredArticles} /> */}
+      {/* </div> */}
+      {/* </section> */}
       <section className="text-gray-700 body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">

@@ -3,48 +3,35 @@ import Link from "next/link"
 
 const FeaturedArticlesList = ({ featuredArticles }) => {
   return (
-    <section className="text-gray-700">
-      <div className="container px-5 py-24 mx-auto flex flex-wrap">
-        <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden"></div>
-        <div className="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
-          {featuredArticles.slice(0, 3).map((_featuredArticle) => (
-            <div
-              key={_featuredArticle.id}
-              className="flex flex-col mb-10 lg:items-start items-center"
-            >
-              <div
-                id="code-icon"
-                className="w-12 h-12 inline-flex items-center justify-center rounded-full text-teal-900 mb-5"
-              >
-                <i className="fas fa-code"></i>
-              </div>
-              <div className="flex-grow">
-                <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-                  {_featuredArticle.title}{" "}
-                </h2>
-                <p className="leading-relaxed text-base">
-                  {_featuredArticle.description}
-                </p>
-                <a className="mt-3 text-teal-900 inline-flex items-center">
-                  Continue Reading
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    className="w-4 h-4 ml-2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-              </div>
+    <div className="flex flex-col items-center justify-center">
+      <h1 className="text-3xl font-bold mt-10">Translate Down on Hover</h1>
+      <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-8 duration-500 ease-in-out">
+        <div className="md:flex">
+          <div className="md:flex-shrink-0">
+            <img
+              className="h-48 w-full object-cover md:w-48"
+              src="https://picsum.photos/seed/hover/400/500"
+              alt=""
+            />
+          </div>
+          <div className="p-8">
+            <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
+              Case study
             </div>
-          ))}
+            <a
+              href="#"
+              className="block mt-1 text-lg leading-tight font-medium text-black hover:underline"
+            >
+              Finding customers for your new business
+            </a>
+            <p className="mt-2 text-gray-500">
+              Getting a new business off the ground is a lot of hard work. Here
+              are five ideas you can use to find your first customers.
+            </p>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
   )
 }
 
