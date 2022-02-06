@@ -1,6 +1,5 @@
 import NextImage from "./Image"
 import Link from "next/link"
-import Image from "next/image"
 
 const ProductsList = ({ products }) => {
   return (
@@ -14,17 +13,12 @@ const ProductsList = ({ products }) => {
             <a>
               <div className="w-full bg-white">
                 <div className="rounded-t-lg pt-2 pb-2 w-1/2 mx-auto">
-                  <Image
-                    alt="article"
-                    src={_product.image[0].url}
-                    width={1000}
-                    height={700}
-                  />
+                  <NextImage media={_product.image} />
                 </div>
               </div>
               <div className="pl-4 pr-4 pb-4 pt-4 rounded-lg">
                 <h4 className="mt-1 font-semibold text-base leading-tight truncate text-gray-700">
-                  {_product.title} testt
+                  {_product.title}
                 </h4>
                 <div className="mt-1 text-sm text-gray-700">
                   {_product.description}
