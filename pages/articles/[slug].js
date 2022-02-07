@@ -1,6 +1,7 @@
 import { useRouter } from "next/router"
 import { getArticles, getArticle } from "../../utils/api"
-import NextImage from "../../components/Image"
+import Image from "next/image"
+import Link from "next/link"
 
 const ArticlePage = ({ article }) => {
   const router = useRouter()
@@ -9,15 +10,21 @@ const ArticlePage = ({ article }) => {
   }
 
   return (
-    <div className="m-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 mt-8">
-      <h1>{article.title}</h1>
-      <div>
-        <div>
-          <div>{article.content}</div>
-        </div>
+    <div>
+      <div title="All posts" className="">
+        <Link href="/blog" passHref>
+          <i className="fas fa-arrow-alt-circle-left fa-3x mt-10 ml-10 text-teal-700 transition transform hover:-translate-x-2"></i>
+        </Link>
       </div>
-      <div className="rounded-t-lg pt-2 pb-2 m-auto h-40 w-40">
-        <NextImage media={article.image} />
+      <div className="w-7/12 mx-auto -mt-12 flex flex-col justify-between capitalize">
+        <h1 className="text-center text-2xl mb-8">{article.title}</h1>
+        <div>
+          <div>
+            <div className="text-left text-md leading-10">
+              {article.content}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )

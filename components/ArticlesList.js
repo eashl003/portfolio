@@ -16,25 +16,26 @@ const ArticlesList = ({ articles }) => {
               <div className="md:flex">
                 <div className="items-stretch">
                   <div className="h-48 w-48 relative">
-                    <Image
-                      src={_article.image[0].url}
-                      alt="Picture of the author"
-                      layout="fill"
-                      objectFit="cover"
-                      className="object-left"
-                    />
+                    <Link href={`/articles/${_article.slug}`} passHref>
+                      <Image
+                        src={_article.image[0].url}
+                        alt="Picture of the author"
+                        layout="fill"
+                        objectFit="cover"
+                        className="object-left"
+                      />
+                    </Link>
                   </div>
                 </div>
                 <div className="p-8">
-                  <a
-                    href="#"
-                    className="block mt-1 text-lg leading-tight font-medium text-black"
-                  >
+                  <Link href={`/articles/${_article.slug}`} passHref>
                     {_article.title}
-                  </a>
-                  <p className="mt-2 text-sm text-gray-500 line-clamp-4">
-                    {_article.description}
-                  </p>
+                  </Link>
+                  <Link href={`/articles/${_article.slug}`} passHref>
+                    <p className="mt-2 text-sm text-gray-500 line-clamp-4">
+                      {_article.description}
+                    </p>
+                  </Link>
                 </div>
               </div>
             </div>
