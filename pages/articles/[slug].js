@@ -7,7 +7,7 @@ import ReactMarkdown from "react-markdown"
 const ArticlePage = ({ article }) => {
   const router = useRouter()
   if (router.isFallback) {
-    return <div>Loading article...</div>
+    return <div>Loading article. ...</div>
   }
 
   return (
