@@ -1,6 +1,5 @@
 import { useRouter } from "next/router"
 import { getArticles, getArticle } from "../../utils/api"
-import Image from "next/image"
 import Link from "next/link"
 import ReactMarkdown from "react-markdown"
 
@@ -17,8 +16,10 @@ const ArticlePage = ({ article }) => {
           <i className="fas fa-arrow-alt-circle-left fa-2x mt-10 ml-10 text-teal-700 transition transform hover:-translate-x-2"></i>
         </Link>
       </div>
-      <div className="w-7/12 mx-auto -mt-12 flex flex-col justify-between capitalize">
-        <h1 className="text-center text-2xl mb-8">{article.title}</h1>
+      <div className="w-7/12 mx-auto -mt-12 flex flex-col justify-between">
+        <h1 className="text-center text-2xl mb-8 font-bold capitalize">
+          {article.title}
+        </h1>
         <ReactMarkdown source={article.content} escapeHtml={false} />
       </div>
     </div>

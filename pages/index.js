@@ -75,7 +75,7 @@ const HomePage = ({ products, recentArticles, featuredArticles }) => {
               for a purpose that mattered to you&quot;
             </h1>
             <p className="lg:w-1/2 w-full leading-relaxed text-base">
-              -Kathleen Neagle Sokolowski
+              -Kathleen Neagle Sokolowski test
             </p>
           </div>
         </div>
