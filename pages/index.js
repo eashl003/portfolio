@@ -11,12 +11,12 @@ const HomePage = ({ products, recentArticles, featuredArticles }) => {
       <section id="top-section" className="text-gray-700 body-font">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-teal-800 font-poiret">
               Hi, I&apos;m Elisabeth!
               <br className="hidden lg:inline-block" />
               <p>Lorem ipsum dolor</p>
             </h1>
-            <p className="mb-8 leading-relaxed">
+            <p className="mb-8 leading-relaxed text-teal-900">
               Elit eget gravida cum sociis. Semper risus in hendrerit gravida
               rutrum quisque non tellus. Mauris rhoncus aenean vel elit
               scelerisque mauris. Porta lorem mollis aliquam ut porttitor leo a
@@ -67,19 +67,18 @@ const HomePage = ({ products, recentArticles, featuredArticles }) => {
       {/* <FeaturedArticlesList featuredArticles={featuredArticles} /> */}
       {/* </div> */}
       {/* </section> */}
-      <section className="text-gray-700 body-font">
-        <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
-            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
-              &quot;Imagine starting your day writing something of your choosing
-              for a purpose that mattered to you&quot;
-            </h1>
-            <p className="lg:w-1/2 w-full leading-relaxed text-base">
-              -Kathleen Neagle Sokolowski test
-            </p>
-          </div>
+
+      <div className="container px-5 py-24 mx-auto text-teal-900 font-poiret">
+        <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
+          <h1 className="text-2xl font-medium title-font mb-2">
+            &quot;Imagine starting your day writing something of your choosing
+            for a purpose that mattered to you&quot;
+          </h1>
+          <p className="lg:w-1/2 w-full leading-relaxed text-sm">
+            -Kathleen Neagle Sokolowski test
+          </p>
         </div>
-      </section>
+      </div>
     </div>
   )
 }

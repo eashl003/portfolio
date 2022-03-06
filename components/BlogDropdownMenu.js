@@ -22,7 +22,7 @@ const BlogDropdownMenu = ({ blogs = [] }) => {
       >
         <Menu.Items className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white text-md ">
           <div className="py-1">
-            <ul className="text-teal-800 ml-8 hover:text-teal-600">
+            <ul className="text-teal-800 ml-8 hover:text-teal-300">
               <Menu.Item>
                 {({ active }) => (
                   <Link href="/blog" passHref>
@@ -37,7 +37,7 @@ const BlogDropdownMenu = ({ blogs = [] }) => {
                   <li key={_blog.id}>
                     <Menu.Item>
                       {({ active }) => (
-                        <li className="hover:text-teal-600">
+                        <li className="hover:text-teal-300">
                           <Link href={`/blogs/${_blog.slug}`} passHref>
                             {_blog.name}
                           </Link>
