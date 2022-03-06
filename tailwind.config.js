@@ -22,6 +22,15 @@ module.exports = {
       black: "#000",
       white: "#fff",
 
+      slate: {
+        100: "#f1f5f9",
+      },
+      neutral: {
+        100: "#f5f5f5",
+      },
+      stone: {
+        50: "#fafaf9",
+      },
       gray: {
         100: "#f7fafc",
         200: "#edf2f7",

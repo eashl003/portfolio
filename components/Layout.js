@@ -4,7 +4,7 @@ import Navbar from "./Navbar"
 
 const Layout = ({ children, categories, blogs }) => {
   return (
-    <div className="flex justify-center ">
+    <div className="flex justify-center bg-stone-50 ">
       <div className="flex flex-col min-h-screen w-full">
         <Navbar categories={categories} blogs={blogs} />
         <div className="flex-grow">{children}</div>

@@ -7,7 +7,7 @@ import BlogDropdownMenu from "./BlogDropdownMenu"
 const Navbar = ({ categories = [], blogs = [] }) => {
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <div className="sticky top-0 z-50 bg-white">
+    <div className="sticky top-0 z-50 bg-stone-50">
       <nav className="text-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-end h-20">
@@ -15,33 +15,7 @@ const Navbar = ({ categories = [], blogs = [] }) => {
               <div className="flex-shrink-0 font-menlo text-3xl absolute top-4 ml-10 left-0">
                 <Link href="/" passHref>
                   <p className="brand" id="p-id" aria-label="brand-name">
-                    <span id="span-id" data-text="E">
-                      E
-                    </span>
-                    <span id="span-id" data-text="L">
-                      L
-                    </span>
-                    <span className="liz" id="span-id" data-text="I">
-                      I
-                    </span>
-                    <span id="span-id" data-text="S">
-                      S
-                    </span>
-                    <span id="span-id" data-text="A">
-                      A
-                    </span>
-                    <span id="span-id" data-text="B">
-                      B
-                    </span>
-                    <span id="span-id" data-text="E">
-                      E
-                    </span>
-                    <span id="span-id" data-text="T">
-                      T
-                    </span>
-                    <span id="span-id" data-text="H">
-                      H
-                    </span>
+                    Elisabeth Ashley
                   </p>
                 </Link>
               </div>
