@@ -7,26 +7,24 @@ import BlogDropdownMenu from "./BlogDropdownMenu"
 const Navbar = ({ categories = [], blogs = [] }) => {
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <div className="sticky top-0 z-50 bg-stone-50">
+    <div className="sticky top-0 z-50 bg-stone-50 font-poiret text-teal-800 lowercase font-extrabold text-xl">
       <nav className="text-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-end h-20">
             <div className="flex items-center">
-              <div className="flex-shrink-0 font-menlo text-3xl absolute top-4 ml-10 left-0">
+              <div className="flex-shrink-0 text-3xl absolute top-4 ml-10 left-0 hover:text-teal-300">
                 <Link href="/" passHref>
-                  <p className="brand" id="p-id" aria-label="brand-name">
-                    Elisabeth Ashley
-                  </p>
+                  <p>Elisabeth Ashley</p>
                 </Link>
               </div>
               <div className="hidden md:flex items-center md:flex-1 lg:w-">
                 <div className="ml-10 flex items-baseline">
                   <BlogDropdownMenu blogs={blogs} />
-                  <ShopDropdownMenu categories={categories} />
-                  <div className="text-teal-800 ml-4 hover:text-teal-600 uppercase">
+                  {/* <ShopDropdownMenu categories={categories} /> */}
+                  <div className="text-teal-800 ml-4 hover:text-teal-300">
                     Projects
                   </div>
-                  <div className="ml-8 text-teal-800 hover:text-teal-600 uppercase">
+                  <div className="ml-8 text-teal-800 hover:text-teal-300">
                     <Link href="/about">About</Link>
                   </div>
                 </div>
@@ -90,15 +88,15 @@ const Navbar = ({ categories = [], blogs = [] }) => {
           {(ref) => (
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <ul className="uppercase text-teal-800 text-center">
+                <ul className=" text-teal-800 text-center">
                   <ul className="hover:font-bold">
                     <li className="hover:font-bold px-3 py-2 mt-8 rounded-md text-sm">
                       Blog
                     </li>
                   </ul>
-                  <li className="hover:font-bold px-3 py-2 rounded-md text-sm">
+                  {/* <li className="hover:font-bold px-3 py-2 rounded-md text-sm">
                     Shop
-                  </li>
+                  </li> */}
                   <li className="hover:font-bold px-3 py-2 rounded-md text-sm">
                     <Link href="#">Projects</Link>
                   </li>

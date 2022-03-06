@@ -266,16 +266,22 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ["Roboto", "sans-serif", "Oswald"],
-        serif: ["Georgia", "Cambria", '"Times New Roman"', "Times", "serif"],
-        mono: [
-          "Menlo",
-          "Monaco",
-          "Consolas",
-          '"Liberation Mono"',
-          '"Courier New"',
-          "monospace",
-        ],
+        extend: {
+          nunito: ["nunito", "sans-serif"],
+          MyFont: ['"My Font"', "serif"],
+          sacramento: ["'Sacramento'", "cursive"],
+          poiret: ["'Poiret One'", "cursive"],
+        },
+        // sans: ["Roboto", "sans-serif", "Oswald"],
+        // serif: ["Georgia", "Cambria", '"Times New Roman"', "Times", "serif"],
+        // mono: [
+        //   "Menlo",
+        //   "Monaco",
+        //   "Consolas",
+        //   '"Liberation Mono"',
+        //   '"Courier New"',
+        //   "monospace",
+        // ],
       },
     },
     fontSize: {
