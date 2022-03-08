@@ -17,14 +17,14 @@ const Navbar = ({ categories = [], blogs = [] }) => {
                   <p>Elisabeth Ashley</p>
                 </Link>
               </div>
-              <div className="hidden md:flex items-center md:flex-1 mr-16">
+              <div className="hidden md:flex items-center mr-16">
                 <div className="flex items-baseline">
                   <BlogDropdownMenu blogs={blogs} />
                   {/* <ShopDropdownMenu categories={categories} /> */}
-                  <div className="text-teal-800 ml-4 hover:text-teal-300">
+                  <div className="text-teal-800 ml-10 hover:text-teal-300">
                     Projects
                   </div>
-                  <div className="ml-8 text-teal-800 hover:text-teal-300">
+                  <div className="ml-12 text-teal-800 hover:text-teal-300">
                     <Link href="/about">About</Link>
                   </div>
                 </div>

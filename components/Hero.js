@@ -1,4 +1,3 @@
-import { getProducts } from "../utils/api"
 import Link from "next/link"
 import Image from "next/image"
 import RecentArticlesList from "./RecentArticlesList"
@@ -53,10 +52,7 @@ const Hero = ({ recentArticles, home }) => {
 
       <div className="container px-5 py-24 mx-auto text-teal-900 font-poiret">
         <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
-          <h1 className="text-2xl font-medium title-font mb-2">
-            &quot;Imagine starting your day writing something of your choosing
-            for a purpose that mattered to you&quot;
-          </h1>
+          <h1 className="text-2xl font-medium title-font mb-2">{home.quote}</h1>
           <p className="lg:w-1/2 w-full leading-relaxed text-sm">
             -Kathleen Neagle Sokolowski test
           </p>
