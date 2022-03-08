@@ -9,7 +9,10 @@ const BlogDropdownMenu = ({ blogs = [] }) => {
     <Menu as="div" className="z-10 relative inline-block text-left">
       <Menu.Button className="menu-btn inline-flex justify-center w-full px-4 py-2 font-extrabold text-xl hover:text-teal-300">
         blog
-        <ChevronDownIcon className="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
+        <ChevronDownIcon
+          className="-mr-1 ml-2 mt-1 h-5 w-5"
+          aria-hidden="true"
+        />
       </Menu.Button>
       <Transition
         as={Fragment}

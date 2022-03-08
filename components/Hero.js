@@ -1,26 +1,19 @@
 import { getProducts } from "../utils/api"
 import Link from "next/link"
 import Image from "next/image"
-import RecentArticlesList from "./components/RecentArticlesList"
-import FeaturedArticlesList from "./components/FeaturedArticlesList"
-import { getFeaturedArticles, getRecentArticles } from "../utils/api"
+import RecentArticlesList from "./RecentArticlesList"
 
-const Hero = ({}) => {
+const Hero = ({ recentArticles, home }) => {
   return (
     <div>
       <section id="top-section" className="text-gray-700 body-font">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-teal-800 font-poiret">
-              Hi, I&apos;m Elisabeth!
-              <br className="hidden lg:inline-block" />
-              <p>Lorem ipsum dolor</p>
+              {home.heading}
             </h1>
             <p className="mb-8 leading-relaxed text-teal-900">
-              Elit eget gravida cum sociis. Semper risus in hendrerit gravida
-              rutrum quisque non tellus. Mauris rhoncus aenean vel elit
-              scelerisque mauris. Porta lorem mollis aliquam ut porttitor leo a
-              diam. Sed faucibus turpis in eu. Id interdum velit laoreet id.
+              {home.introduction}
             </p>
             <div className="flex justify-center">
               <Link href="/blog" passHref>
@@ -57,6 +50,7 @@ const Hero = ({}) => {
       <section className="text-gray-700 body-font">
         <RecentArticlesList recentArticles={recentArticles} />
       </section>
+
       <div className="container px-5 py-24 mx-auto text-teal-900 font-poiret">
         <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
           <h1 className="text-2xl font-medium title-font mb-2">
@@ -70,14 +64,6 @@ const Hero = ({}) => {
       </div>
     </div>
   )
-}
-
-export async function getStaticProps() {
-  const products = await getProducts()
-  const featuredArticles = await getFeaturedArticles()
-  const recentArticles = await getRecentArticles()
-
-  return { props: { products, recentArticles, featuredArticles } }
 }
 
 export default Hero

@@ -61,3 +61,8 @@ export async function getRecentArticles() {
   const recentArticles = await fetchAPI("/articles?_sort=date_created:DESC")
   return recentArticles
 }
+
+export async function getHome() {
+  const home = await fetchAPI("/home")
+  return home
+}
