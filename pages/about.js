@@ -1,4 +1,4 @@
-import { getAbout } from "../utils/api" 
+import { getAbout } from "../utils/api"
 
 const About = ({ about }) => {
   return <div>{about.title}</div>
