@@ -66,3 +66,8 @@ export async function getHome() {
   const home = await fetchAPI("/home")
   return home
 }
+
+export async function getAbout() {
+  const about = await fetchAPI("/about")
+  return about
+}

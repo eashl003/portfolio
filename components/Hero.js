@@ -22,7 +22,7 @@ const Hero = ({ recentArticles, home }) => {
               </Link>
               <Link href="/shop" passHref>
                 <button className="ml-4 inline-flex text-gray-700 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded text-lg">
-                  Shop
+                  Projects
                 </button>
               </Link>
             </div>
@@ -38,10 +38,10 @@ const Hero = ({ recentArticles, home }) => {
           </div>
         </div>
       </section>
-      <div className="flex flex-col text-center w-full">
+      <div className="flex flex-col text-center w-full font-poiret">
         <h1
           id="recent-post-title"
-          className="mb-6 sm:text-3xl text-2xl font-medium title-font text-teal-700"
+          className="mb-6 text-4xl text-2xl font-medium title-font text-teal-700"
         >
           Recent Posts
         </h1>
