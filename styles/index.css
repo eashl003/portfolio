@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Sacramento&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
 
 .font-nunito {
     font-family: nunito, sans-serif;
@@ -15,4 +16,8 @@
 
 .font-poiret {
     font-family: 'Poiret One', cursive; 
+}
+
+.font-arimo {
+    font-family: 'Arimo', sans-serif;
 }

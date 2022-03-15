@@ -145,6 +145,9 @@ module.exports = {
         50: "#FDF8F3",
         100: "#EAB996",
         200: "#AB503F",
+        300: "#CB7666",
+        400: "#C47F66",
+        500: "#C26B5B",
       },
     },
     spacing: {
@@ -276,6 +279,7 @@ module.exports = {
           MyFont: ['"My Font"', "serif"],
           sacramento: ["'Sacramento'", "cursive"],
           poiret: ["'Poiret One'", "cursive"],
+          arimo: ["Arimo", "sans-serif"],
         },
         // sans: ["Roboto", "sans-serif", "Oswald"],
         // serif: ["Georgia", "Cambria", '"Times New Roman"', "Times", "serif"],

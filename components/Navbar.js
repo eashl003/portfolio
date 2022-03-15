@@ -7,12 +7,12 @@ import BlogDropdownMenu from "./BlogDropdownMenu"
 const Navbar = ({ categories = [], blogs = [] }) => {
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <div className="sticky top-0 z-50 bg-salmon-200 font-poiret text-salmon-50 lowercase font-extrabold text-xl">
+    <div className="sticky top-0 z-50 bg-salmon-200 font-arimo text-salmon-50 font-extrabold text-xl">
       <nav className="text-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-end h-20">
             <div className="flex items-center">
-              <div className="flex-shrink-0 text-3xl absolute top-4 ml-16 left-0 hover:text-teal-300">
+              <div className="flex-shrink-0 text-3xl absolute top-4 ml-16 left-0 hover:text-salmon-100">
                 <Link href="/" passHref>
                   <p>Elisabeth Ashley</p>
                 </Link>
@@ -21,10 +21,10 @@ const Navbar = ({ categories = [], blogs = [] }) => {
                 <div className="flex items-baseline">
                   <BlogDropdownMenu blogs={blogs} />
                   {/* <ShopDropdownMenu categories={categories} /> */}
-                  <div className="text-salmon-50 ml-10 hover:text-teal-300">
+                  <div className="text-salmon-50 ml-10 hover:text-salmon-100">
                     Projects
                   </div>
-                  <div className="ml-12 text-salmon-50 hover:text-teal-300">
+                  <div className="ml-12 text-salmon-50 hover:text-salmon-100">
                     <Link href="/about">About</Link>
                   </div>
                 </div>
