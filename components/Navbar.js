@@ -7,7 +7,7 @@ import BlogDropdownMenu from "./BlogDropdownMenu"
 const Navbar = ({ categories = [], blogs = [] }) => {
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <div className="sticky top-0 z-50 bg-stone-50 font-poiret text-teal-800 lowercase font-extrabold text-xl">
+    <div className="sticky top-0 z-50 bg-salmon-200 font-poiret text-salmon-50 lowercase font-extrabold text-xl">
       <nav className="text-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-end h-20">
@@ -21,10 +21,10 @@ const Navbar = ({ categories = [], blogs = [] }) => {
                 <div className="flex items-baseline">
                   <BlogDropdownMenu blogs={blogs} />
                   {/* <ShopDropdownMenu categories={categories} /> */}
-                  <div className="text-teal-800 ml-10 hover:text-teal-300">
+                  <div className="text-salmon-50 ml-10 hover:text-teal-300">
                     Projects
                   </div>
-                  <div className="ml-12 text-teal-800 hover:text-teal-300">
+                  <div className="ml-12 text-salmon-50 hover:text-teal-300">
                     <Link href="/about">About</Link>
                   </div>
                 </div>
@@ -88,7 +88,7 @@ const Navbar = ({ categories = [], blogs = [] }) => {
           {(ref) => (
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <ul className=" text-teal-800 text-center">
+                <ul className=" text-salmon-50 text-center">
                   <ul className="hover:font-bold">
                     <li className="hover:font-bold px-3 py-2 mt-8 rounded-md text-sm">
                       Blog
