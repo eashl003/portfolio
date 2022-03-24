@@ -7,20 +7,20 @@ const Hero = ({ recentArticles, home }) => {
     <div className="bg-teal-500">
       <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-teal-50 font-arimo">
+          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-teal-100 font-arimo">
             {home.heading}
           </h1>
-          <p className="mb-8 leading-relaxed text-teal-50">
+          <p className="mb-8 leading-relaxed text-teal-100">
             {home.introduction}
           </p>
           <div className="flex justify-center">
             <Link href="/blog" passHref>
-              <button className="inline-flex text-white bg-teal-200 border-0 py-2 px-6  focus:outline-none rounded text-xl">
+              <button className="inline-flex text-white bg-teal-200 border-0 py-2 px-6 shadow-lg focus:outline-none rounded text-xl transform transition duration-500 hover:scale-110">
                 Blog
               </button>
             </Link>
             <Link href="/shop" passHref>
-              <button className="ml-4 inline-flex text-teal-200 bg-teal-100 border-0 py-2 px-6 focus:outline-none rounded text-lg">
+              <button className="ml-4 inline-flex text-teal-200 bg-teal-100 border-0 py-2 px-6 shadow-lg focus:outline-none rounded text-lg transform transition duration-500 hover:scale-110">
                 Projects
               </button>
             </Link>
