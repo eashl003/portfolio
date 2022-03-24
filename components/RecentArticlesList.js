@@ -3,7 +3,7 @@ import Image from "next/image"
 
 const RecentArticlesList = ({ recentArticles }) => {
   return (
-    <div className="md:flex space-x-12 justify-center   ">
+    <div className="md:flex space-x-6 justify-center">
       {recentArticles.slice(0, 3).map((_recentArticle) => (
         <div
           key={_recentArticle.id}
