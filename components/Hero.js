@@ -38,17 +38,10 @@ const Hero = ({ recentArticles, home }) => {
       </div>
       <section className="text-gray-700 body-font bg-teal-100">
         <div className="flex flex-col text-center w-full font-arimo">
-          <h1
-            id="recent-post-title"
-            className="mb-6 text-4xl text-2xl font-medium title-font text-teal-50"
-          >
-            Recent Posts
-          </h1>
           <RecentArticlesList recentArticles={recentArticles} />
         </div>
-      </section>
-
-      <div className="container px-5 py-24 mx-auto text-teal-50 font-arimo">
+      </section>  
+      <div className="container px-5 py-24 mx-auto text-teal-100 font-arimo">
         <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
           <h1 className="text-2xl font-medium title-font mb-2">{home.quote}</h1>
           <p className="lg:w-1/2 w-full leading-relaxed text-sm">
