@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Sacramento&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap');
 
 .font-nunito {
     font-family: nunito, sans-serif;
@@ -20,4 +21,8 @@
 
 .font-arimo {
     font-family: 'Arimo', sans-serif;
+}
+
+.font-passions {
+    font-family: 'Passions Conflict', cursive;
 }

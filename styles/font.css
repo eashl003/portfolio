@@ -194,3 +194,32 @@ body {
   transform-origin: left bottom;
   transform: perspective(1000px) rotateX(-10deg) rotateY(10deg) rotateZ(2deg);
 }
+
+/*
+.hero-background {
+  background: rgb(252,70,107);
+  background: radial-gradient(circle, rgba(252,70,107,1) 0%, rgba(63,94,251,1) 100%);
+  background-blend-mode: screen;
+  height: 100vh;
+  text-align:center;
+  background-repeat: no-repeat;
+}
+*/ 
+.hero-background {
+  background-image: linear-gradient(-45deg, #fd4007, #831170, #1b6b88, #1db390);
+  background-size: 400% 400%;
+  animation: gradient 25s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}

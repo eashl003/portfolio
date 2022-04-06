@@ -160,6 +160,14 @@ module.exports = {
         400: "#C47F66",
         500: "#C26B5B",
       },
+      oxley: {
+        50: "#7C9C90",
+        100: "#2E5E4E",
+        200: "#93A7AA",
+      },
+      stark: {
+        50: "#E7E1C5",
+      },
     },
     spacing: {
       px: "1px",
@@ -291,6 +299,7 @@ module.exports = {
           sacramento: ["'Sacramento'", "cursive"],
           poiret: ["'Poiret One'", "cursive"],
           arimo: ["Arimo", "sans-serif"],
+          passions: ["Passions Conflict", "cursive"],
         },
         // sans: ["Roboto", "sans-serif", "Oswald"],
         // serif: ["Georgia", "Cambria", '"Times New Roman"', "Times", "serif"],
