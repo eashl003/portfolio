@@ -20,7 +20,7 @@ const Hero = ({ recentArticles, home }) => {
               >
                 <span className="sr-only">Open main menu</span>
                 {!isOpen ? (
-                  <button className="bg-transparent text-2xl text-white font-semibold hover:text-pink-500 py-2 px-4 border border-white hover:border-pink-500 rounded transform transition duration-500 hover:scale-105">
+                  <button className="bg-transparent text-2xl text-white font-semibold hover:text-pink-500 py-2 px-4 border border-white hover:border-pink-500 rounded shadow-xl transform transition duration-500 hover:scale-105">
                     M<br></br>E<br></br>N<br></br>U
                   </button>
                 ) : (
@@ -61,15 +61,20 @@ const Hero = ({ recentArticles, home }) => {
               >
                 <ul className=" text-teal-50 text-right align-right mr-10">
                   <ul className="hover:font-bold">
-                    <li className="bg-transparent text-md text-white font-semibold hover:text-pink-500 py-2 px-4 border border-white hover:border-pink-500 rounded shadow-2xl transform transition duration-500 hover:scale-105">
-                      Blog
+                    <li className="uppercase text-xl mt-8 hover:text-pink-500">
+                      B<br></br>l<br></br>o<br></br>g
                     </li>
                   </ul>
                   {/* <li className="hover:font-bold px-3 py-2 rounded-md text-sm">
                     Shop
                   </li> */}
-                  <li className="mt-4 bg-transparent text-md text-white font-semibold hover:text-pink-500 py-2 px-4 border border-white hover:border-pink-500 rounded shadow-2xl transform transition duration-500 hover:scale-105">
-                    <Link href="#">Projects</Link>
+                  <li className="mt-4 uppercase bg-transparent text-xl text-white font-semibold hover:text-pink-500 transform transition duration-500 hover:scale-105">
+                    <Link href="#">
+                      <span>
+                        <br></br>P<br></br>r<br></br>o<br></br>j<br></br>e
+                        <br></br>t<br></br>s
+                      </span>
+                    </Link>
                   </li>
                   <li className="mt-4 bg-transparent text-md text-white font-semibold hover:text-pink-500 py-2 px-4 border border-white hover:border-pink-500 rounded shadow-2xl transform transition duration-500 hover:scale-105">
                     <Link
@@ -86,15 +91,16 @@ const Hero = ({ recentArticles, home }) => {
         </Transition>
       </div>
       <div>
-        <h1 className="flex justify-center items-center text-3xl  font-medium text-stone-50 font-arimo mt-48">
+        <h1 className="hero-text flex justify-center items-center text-3xl  font-medium text-stone-50 font-arimo mt-48">
           {home.heading}
         </h1>
       </div>
       <div className="flex justify-center items-center text-lg  font-medium text-stone-50 font-arimo">
         <h1 className="w-4/5">{home.introduction}</h1>
       </div>
-      <div className="flex space-x-8 w-full h-full justify-center content-center items-center text-blue-500 text-xl -mt-48">
-        <button className="bg-transparent text-2xl text-white font-semibold hover:text-pink-500 py-2 px-4 border border-white hover:border-pink-500 rounded shadow-2xl transform transition duration-500 hover:scale-105">
+      <div className="flex space-x-8 w-full h-full justify-center content-center items-center -mt-48">
+        <RecentArticlesList recentArticles={recentArticles} />
+        {/* <button className="bg-transparent text-2xl text-white font-semibold hover:text-pink-500 py-2 px-4 border border-white hover:border-pink-500 rounded shadow-2xl transform transition duration-500 hover:scale-105">
           Blog
         </button>
         <button className="bg-transparent text-2xl text-white font-semibold hover:text-pink-500 py-2 px-4 border border-white hover:border-pink-500 rounded shadow-2xl transform transition duration-500 hover:scale-105">
@@ -102,7 +108,7 @@ const Hero = ({ recentArticles, home }) => {
         </button>
         <button className="bg-transparent text-2xl text-white font-semibold hover:text-pink-500 py-2 px-4 border border-white hover:border-pink-500 rounded shadow-2xl transform transition duration-500 hover:scale-105">
           About
-        </button>
+        </button> */}
 
         {/* <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-teal-100 font-arimo">
