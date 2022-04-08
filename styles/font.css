@@ -206,37 +206,46 @@ body {
 }
 */ 
 .hero-background {
-  background-image: linear-gradient(-45deg,  #EAAE88, #EAAE88, #CB3F32, #A03126 );
+  /* background-image: linear-gradient(-45deg,  #87ACA3, #87ACA3, #0C1446, #0C1446 ); */
   background-size: 400% 400%;
-  animation: gradient 20s ease-out infinite;
+  animation: gradient 50s ease-out infinite;
   height: 100vh;
   overflow: hidden;
 } 
 
 .hero-text { 
-  background: linear-gradient(-45deg, #FBF6F3, #FBF6F3, #CBB432, #CBB432, #CBB432, #CBB432);
+  background: linear-gradient(-45deg, #FBF6F3, #FBF6F3, #814350, #814350);
 	background-size: 300%;
 	font-weight: 900;
 	font-size: 3vw;
 	letter-spacing: -1px;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	animation: animated_text 15s ease-out infinite;
-	-moz-animation: animated_text 15s ease-out infinite;
-	-webkit-animation: animated_text 15s ease-out infinite;
-  margin-left: 10%;
+	animation: animated_text 30s ease-out infinite;
+	-moz-animation: animated_text 30s ease-out infinite;
+	-webkit-animation: animated_text 30s ease-out infinite;
+  /* margin-left: 10%; */
 
 }
 
 @keyframes gradient {
   0% {
-      background-position: 0% 50%;
+    background-color:#148680;
+  }
+  25% {
+    background-color:#148680;
   }
   50% {
-      background-position: 100% 50%;
-  }
+      /* background-position: 0% 50%; */
+      background-color:#87ACA3;
+  } 
+  75% {
+    /* background-position: 0% 50%; */
+    background-color:#87ACA3;
+  } 
   100% {
-      background-position: 0% 50%;
+    /* background-position: 0% 50%; */
+    background-color:#148680;
   }
 }
 
@@ -258,6 +267,11 @@ body {
 
 .hero-section-b {
   height: 100vh;
+  background-color: #FBF6F3;
+}
+
+.hero-section-c {
+  background-color: #FBF6F3;
 }
 
 
