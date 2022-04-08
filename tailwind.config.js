@@ -300,6 +300,7 @@ module.exports = {
           poiret: ["'Poiret One'", "cursive"],
           arimo: ["Arimo", "sans-serif"],
           passions: ["Passions Conflict", "cursive"],
+          gravitas: ["Gravitas One", "cursive"],
         },
         // sans: ["Roboto", "sans-serif", "Oswald"],
         // serif: ["Georgia", "Cambria", '"Times New Roman"', "Times", "serif"],

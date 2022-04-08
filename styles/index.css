@@ -6,6 +6,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&family=Marcellus+SC&family=Paytone+One&display=swap');
 
 .font-nunito {
     font-family: nunito, sans-serif;
@@ -25,4 +27,8 @@
 
 .font-passions {
     font-family: 'Passions Conflict', cursive;
+}
+
+.font-gravitas {
+    font-family: 'Gravitas One', cursive;
 }
