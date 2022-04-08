@@ -6,7 +6,7 @@ import { Transition } from "@headlessui/react"
 const Hero = ({ recentArticles, home }) => {
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <div className="hide-scrollbar">
+    <div className="hide-scrollbar overflow-x-hidden">
       <div className="hero-background  grid grid-cols-1 gap-4 place-content-center">
         <div>
           <h1 className="hero-text text-5xl text-center font-medium text-stone-50 font-gravitas">

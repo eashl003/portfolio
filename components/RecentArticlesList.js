@@ -13,7 +13,7 @@ const RecentArticlesList = ({ recentArticles }) => {
       <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-y-16 items-center justify-center mt-10">
         {recentArticles.slice(0, 2).map((_recentArticle) => (
           <div key={_recentArticle.id}>
-            <div className="max-w-md mx-auto bg-transparent rounded shadow-lg overflow-hidden md:max-w-6xl transform hover:scale-105 duration-500 ease-in-out hover:shadow-xl">
+            <div className="max-w-md mx-auto bg-transparent rounded shadow-md overflow-hidden md:max-w-6xl transform hover:scale-105 duration-500 ease-in-out hover:shadow-xl">
               <div className="md:flex">
                 <div className="md:flex-shrink-0 -mb-4">
                   <Link href={`/articles/${_recentArticle.slug}`} passHref>

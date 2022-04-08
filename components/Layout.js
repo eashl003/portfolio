@@ -8,7 +8,7 @@ const Layout = ({ children, categories, blogs }) => {
       <div className="flex flex-col min-h-screen w-full">
         {/* <Navbar categories={categories} blogs={blogs} /> */}
         <div className="flex-grow">{children}</div>
-        {/* <Footer /> */}
+        <Footer />
       </div>
       {/* <div
         hidden
