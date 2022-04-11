@@ -197,6 +197,7 @@ module.exports = {
       48: "12rem",
       56: "14rem",
       64: "16rem",
+      90: "20rem",
     },
     backgroundColor: (theme) => theme("colors"),
     backgroundImage: {
