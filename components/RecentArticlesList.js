@@ -4,7 +4,7 @@ import NextImage from "./Image"
 // throw and exeception if value doesn't exist...
 const RecentArticlesList = ({ recentArticles }) => {
   return (
-    <div className="">
+    <div className="absolute m-auto left-0 right-0">
       <div>
         <h1 className="flex justify-center items-center text-2xl  font-medium font-gravitas text-5xl pt-20 text-gray-900">
           Recent Posts
