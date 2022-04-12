@@ -3,10 +3,12 @@ import Link from "next/link"
 import Image from "next/image"
 import RecentArticlesList from "./RecentArticlesList"
 import { Transition } from "@headlessui/react"
+import Footer from "./Footer"
+
 const Hero = ({ recentArticles, home }) => {
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <div className="hide-scrollbar overflow-x-hidden">
+    <div className="absolute m-auto left-0 right-0">
       <div className="hero-background  grid grid-cols-1 gap-4 place-content-center">
         <div>
           <h1 className="hero-text text-5xl text-center font-medium text-stone-50 font-gravitas">
@@ -52,6 +54,7 @@ const Hero = ({ recentArticles, home }) => {
       <section className="hero-section-c bg-teal-500 h-48 -m-10">
         <div>Test</div>
       </section>
+      <Footer />
     </div>
   )
 }
