@@ -18,7 +18,71 @@ const Hero = ({ recentArticles, home }) => {
         <div className="flex justify-center items-center text-xl  font-medium text-stone-50 font-arimo mt-5">
           <h1 className="w-4/5">{home.introduction}</h1>
         </div>
+        {/* Buttons */}
         <div className="flex space-x-8 w-full h-full justify-center content-center items-center mt-5">
+          <a className="btn">
+            <svg width="277" height="62">
+              <defs>
+                <linearGradient id="grad1">
+                  <stop offset="0%" stopColor="#FF5E62" />
+                  <stop offset="100%" stopColor="#FF9966" />
+                </linearGradient>
+              </defs>
+              <rect
+                x="5"
+                y="5"
+                rx="25"
+                fill="none"
+                stroke="url(#grad1)"
+                width="266"
+                height="50"
+              ></rect>
+            </svg>
+            <span>Blog</span>
+          </a>
+          <a className="btn">
+            <svg width="277" height="62">
+              <defs>
+                <linearGradient id="grad1">
+                  <stop offset="0%" stopColor="#FF5E62" />
+                  <stop offset="100%" stopColor="#FF9966" />
+                </linearGradient>
+              </defs>
+              <rect
+                x="5"
+                y="5"
+                rx="25"
+                fill="none"
+                stroke="url(#grad1)"
+                width="266"
+                height="50"
+              ></rect>
+            </svg>
+            <span>Portfolio</span>
+          </a>
+          <a className="btn">
+            <svg width="277" height="62">
+              <defs>
+                <linearGradient id="grad1">
+                  <stop offset="0%" stopColor="#FF9966" />
+                  <stop offset="100%" stopColor="#FF5E62" />
+                </linearGradient>
+              </defs>
+              <rect
+                x="5"
+                y="5"
+                rx="25"
+                fill="none"
+                stroke="url(#grad1)"
+                width="266"
+                height="50"
+              ></rect>
+            </svg>
+            <span>About</span>
+          </a>
+        </div>
+
+        {/* <div className="flex space-x-8 w-full h-full justify-center content-center items-center mt-5">
           <button className="bg-transparent text-2xl text-white font-semibold hover:text-royal-250 py-2 px-4 border border-white hover:border-royal-250 rounded shadow-2xl transform transition duration-500 hover:scale-105">
             Blog
           </button>
@@ -28,7 +92,8 @@ const Hero = ({ recentArticles, home }) => {
           <button className="bg-transparent text-2xl text-white font-semibold hover:text-royal-250 py-2 px-4 border border-white hover:border-royal-250 rounded shadow-2xl transform transition duration-500 hover:scale-105">
             About
           </button>
-        </div>
+        </div> */}
+        {/* Arrow */}
         <div className="flex justify-center items-center">
           <a href="#hero-section-b">
             <svg
