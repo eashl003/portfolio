@@ -2,23 +2,23 @@ import NextImage from "./Image"
 import Link from "next/link"
 
 const Footer = () => (
-  <div className="sticky">
-    <footer className="grid grid-rows-4 grid-flow-col pt-10 bg-gray-900 text-white h-56 pl-48 pr-48">
+  <div className="sticky text-stark-150">
+    <footer className="grid grid-rows-4 grid-flow-col pt-16 h-56 pl-48 pr-48">
       <div className="mb-6 col-span-1">
         <h5 className="uppercase font-bold mb-2.5 text-xl">Menu</h5>
         <ul className="text-lg">
           <li>
-            <a href="#!" className="text-white">
+            <a href="#!" className="">
               Blog
             </a>
           </li>
           <li>
-            <a href="#!" className="text-white">
+            <a href="#!" className="">
               Portfolio
             </a>
           </li>
           <li>
-            <a href="#!" className="text-white">
+            <a href="#!" className="">
               About
             </a>
           </li>
@@ -29,17 +29,17 @@ const Footer = () => (
         <h5 className="uppercase font-bold mb-2.5 text-xl">Resources</h5>
         <ul className="text-lg">
           <li>
-            <a href="#!" className="text-white">
+            <a href="#!" className="">
               Link 1
             </a>
           </li>
           <li>
-            <a href="#!" className="text-white">
+            <a href="#!" className="">
               Link 2
             </a>
           </li>
           <li>
-            <a href="#!" className="text-white">
+            <a href="#!" className="">
               Link 3
             </a>
           </li>
@@ -52,7 +52,7 @@ const Footer = () => (
           passHref
           rel="noreferrer"
         >
-          <i className="fab fa-medium fa-2x px-2 transform hover:-translate-y-1 transition-all duration-500 hover:text-royal-300"></i>
+          <i className="fab fa-medium fa-2x px-2 transform hover:-translate-y-1 transition-all duration-500 "></i>
         </a>
         <a
           href="https://www.linkedin.com/in/elisabethjoyashley"
@@ -60,7 +60,7 @@ const Footer = () => (
           target="_blank"
           rel="noreferrer"
         >
-          <i className="fab fa-linkedin fa-2x px-2 transform hover:-translate-y-1 transition-all duration-500 hover:text-royal-300"></i>
+          <i className="fab fa-linkedin fa-2x px-2 transform hover:-translate-y-1 transition-all duration-500 "></i>
         </a>
         <a
           href="https://github.com/eashl003"
@@ -68,7 +68,7 @@ const Footer = () => (
           target="_blank"
           rel="noreferrer"
         >
-          <i className="fab fa-github fa-2x px-2 transform hover:-translate-y-1 transition-all duration-500 hover:text-royal-300"></i>
+          <i className="fab fa-github fa-2x px-2 transform hover:-translate-y-1 transition-all duration-500 "></i>
         </a>
         <a
           href="https://codepen.io/eashl003"
@@ -76,7 +76,7 @@ const Footer = () => (
           target="_blank"
           rel="noreferrer"
         >
-          <i className="fab fa-codepen fa-2x px-2 transform hover:-translate-y-1 transition-all duration-500 hover:text-royal-300"></i>
+          <i className="fab fa-codepen fa-2x px-2 transform hover:-translate-y-1 transition-all duration-500 "></i>
         </a>
         <form className="flex" action="">
           <strong className="truncate mt-8 pr-4 text-md">
@@ -106,7 +106,7 @@ const Footer = () => (
           />
           <button
             type="submit"
-            className="inline-block h-10  mt-8 ml-4 px-6 py-2 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+            className="inline-block h-10  mt-8 ml-4 px-6 py-2 border-2 border-stark-100 bg-stark-100  font-medium text-xs leading-tight uppercase rounded hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
           >
             Subscribe
           </button>
@@ -114,7 +114,7 @@ const Footer = () => (
       </div>
       {/* <div className="block text-center p-4 bg-gray-900">
       © 2021 Copyright:
-      <a className="text-white" href="https://tailwind-elements.com/">
+      <a className="" href="https://tailwind-elements.com/">
         Test
       </a>
     </div> */}
