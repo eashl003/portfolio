@@ -98,7 +98,7 @@ const Hero = ({ recentArticles, home }) => {
           <a href="#hero-section-b">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="arrow-bounce h-10 w-10 text-white absolute mt-64"
+              className="arrow-bounce h-10 w-10 text-stark-200 absolute mt-40"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
