@@ -330,3 +330,128 @@ body {
   stroke-dasharray: 196, 543;
   stroke-dashoffset: 437;
 }
+
+/* TEST */
+@keyframes lineanim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#animate {
+  position: relative;
+  /* margin-left: 10%; */
+  top: 50%;
+  left: 30%;
+  /* transform: translate(-50%, -50%); */
+} 
+
+#animate path:nth-child(2) {
+/*E*/
+stroke-dasharray: 572;
+stroke-dashoffset: 572;
+animation: lineanim 6.5s ease forwards;
+}
+
+#animate path:nth-child(3) {
+/*L*/
+stroke-dasharray: 400;
+stroke-dashoffset: 400;
+stroke-linecap: square; 
+animation: lineanim 6.5s ease .3s forwards; 
+}
+
+#animate path:nth-child(4) {
+/*I*/ 
+stroke-dasharray: 572;
+stroke-dashoffset: 572;
+stroke-linecap: square;
+animation: lineanim 6.5s ease .6s forwards;  
+}
+
+#animate path:nth-child(5) {
+/*s*/
+stroke-dasharray: 598;
+stroke-dashoffset: 598;
+animation: lineanim 6.5s ease .9s forwards;  
+}
+
+#animate path:nth-child(6) {
+/*A*/
+stroke-dasharray: 572;
+stroke-dashoffset: 572;
+animation: lineanim 6.5s ease 1.2s forwards;
+}
+
+#animate path:nth-child(7) {
+/*B*/ 
+stroke-dasharray: 572;
+stroke-dashoffset: 572;
+animation: lineanim 6.5s ease 1.5s forwards;
+}
+
+#animate path:nth-child(8) {
+/*E*/ 
+stroke-dasharray: 572;
+stroke-dashoffset: 572;
+animation: lineanim 6.5s ease 1.8s forwards;
+}
+
+#animate path:nth-child(9) {
+/*T*/ 
+stroke-dasharray: 800;
+stroke-dashoffset: 800;
+animation: lineanim 6.5s ease 2.1s forwards;
+}
+
+#animate path:nth-child(10) {
+ /*H*/ 
+stroke-dasharray: 572;
+stroke-dashoffset: 572;
+animation: lineanim 4.5s ease 3s forwards;
+} 
+
+#animate path:nth-child(11) {
+ /*a*/ 
+stroke-dasharray: 572;
+stroke-dashoffset: 572;
+animation: lineanim 6.5s ease 3s forwards;
+} 
+
+
+#animate path:nth-child(12) {
+ /*s*/ 
+stroke-dasharray: 572;
+stroke-dashoffset: 572;
+animation: lineanim 6.5s ease 3s forwards;
+} 
+
+#animate path:nth-child(13) {
+ /*h*/ 
+stroke-dasharray: 572;
+stroke-dashoffset: 572;
+animation: lineanim 6.5s ease 3s forwards;
+} 
+
+#animate path:nth-child(14) {
+ /*l*/ 
+stroke-linecap: square;
+stroke-dasharray: 572;
+stroke-dashoffset: 572;
+animation: lineanim 6.5s ease 3s forwards;
+} 
+
+#animate path:nth-child(15) {
+ /*e*/ 
+stroke-dasharray: 572;
+stroke-dashoffset: 572;
+animation: lineanim 6.5s ease 3s forwards;
+} 
+
+#animate path:nth-child(16) {
+ /*y*/ 
+stroke-linecap: square;
+stroke-dasharray: 572;
+stroke-dashoffset: 572;
+animation: lineanim 6.5s ease 3s forwards;
+} 
