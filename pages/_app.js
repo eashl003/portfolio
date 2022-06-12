@@ -17,14 +17,6 @@ const MyApp = ({ Component, pageProps }) => (
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
         crossOrigin="anonymous"
       ></link>
-      <link
-        rel="stylesheet"
-        href="https://cdn.snipcart.com/themes/v3.0.16/default/snipcart.css"
-      />
-      <script
-        async
-        src="https://cdn.snipcart.com/themes/v3.0.16/default/snipcart.js"
-      />
     </Head>
     <Component {...pageProps} />
   </Layout>
