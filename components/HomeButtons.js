@@ -3,7 +3,7 @@ import Link from "next/link"
 
 const HomeButtons = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center">
+    <div className="absolute flex flex-col md:flex-row items-center">
       <a className="btn">
         <svg width="277" height="62">
           <defs>
@@ -22,7 +22,7 @@ const HomeButtons = () => {
             height="50"
           ></rect>
         </svg>
-        <span>Blog</span>
+        <span>Writing</span>
       </a>
       <a className="btn mx-6">
         <svg width="277" height="62">
