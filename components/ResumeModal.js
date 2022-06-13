@@ -33,10 +33,12 @@ export default function ResumeModal(props) {
                       <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
                         <a
                           className={
-                            "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
+                            "text-xs font-bold uppercase px-5 py-3 block leading-normal " +
                             (openTab === 1
-                              ? "text-white bg-" + color + "-600"
-                              : "text-" + color + "-600 bg-white")
+                              ? "text-red-600 border-b-4 border-red-600"
+                              : "text-" +
+                                color +
+                                "-900 border-b hover:text-red-600 hover:border-red-600")
                           }
                           onClick={(e) => {
                             e.preventDefault()
@@ -52,10 +54,12 @@ export default function ResumeModal(props) {
                       <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
                         <a
                           className={
-                            "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
+                            "text-xs font-bold uppercase px-5 py-3 block leading-normal " +
                             (openTab === 2
-                              ? "text-white bg-" + color + "-600"
-                              : "text-" + color + "-600 bg-white")
+                              ? "text-red-600 border-b-4 border-red-600"
+                              : "text-" +
+                                color +
+                                "-900 border-b hover:text-red-600 hover:border-red-600")
                           }
                           onClick={(e) => {
                             e.preventDefault()
@@ -71,10 +75,12 @@ export default function ResumeModal(props) {
                       <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
                         <a
                           className={
-                            "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
+                            "text-xs font-bold uppercase px-5 py-3 block leading-normal " +
                             (openTab === 3
-                              ? "text-white bg-" + color + "-600"
-                              : "text-" + color + "-600 bg-white")
+                              ? "text-red-600 border-b-4 border-red-600"
+                              : "text-" +
+                                color +
+                                "-900 border-b hover:text-red-600 hover:border-red-600")
                           }
                           onClick={(e) => {
                             e.preventDefault()
@@ -89,7 +95,7 @@ export default function ResumeModal(props) {
                       </li>
                     </ul>
                   </div>
-                  <div className="relative flex flex-col min-w-0 break-words bg-white text-black w-full mb-6 shadow-lg rounded">
+                  <div className="relative flex flex-col min-w-0 break-words bg-white text-black w-full mb-6">
                     <div className="px-4 py-5 flex-auto">
                       <div className="tab-content tab-space">
                         <div
