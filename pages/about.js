@@ -2,11 +2,16 @@ import React, { useState, useCallback } from "react"
 import { getAbout } from "../utils/api"
 import ThemeButton from "../components/ThemeButton"
 import ResumeModal from "../components/ResumeModal"
+import CertificationsModal from "../components/CertificationsModal"
 
 const About = ({ about }) => {
-  const [showModal, setShowModal] = useState(false)
-  function openModal() {
-    setShowModal(!showModal)
+  const [showResumeModal, setShowResumeModal] = useState(false)
+  const [showCertModal, setShowCertModal] = useState(false)
+  function openResumeModal() {
+    setShowResumeModal(!showResumeModal)
+  }
+  function openCertModal() {
+    setShowCertModal(!showCertModal)
   }
 
   return (
@@ -27,11 +32,14 @@ const About = ({ about }) => {
           About Me
         </h1>
         <div className="flex flex-row items-center space-x-6">
-          <span onClick={openModal}>
+          <span onClick={openResumeModal}>
             <ThemeButton title="Resume" />
           </span>
-          <ResumeModal toggle={showModal} action={openModal} />
-          <ThemeButton title="Certifications" />
+          <ResumeModal toggle={showResumeModal} action={openResumeModal} />
+          <span onClick={openCertModal}>
+            <ThemeButton title="Certifications" />
+          </span>
+          <CertificationsModal toggle={showCertModal} action={openCertModal} />
         </div>
       </section>
     </div>
