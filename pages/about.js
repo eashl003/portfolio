@@ -1,11 +1,10 @@
 import React, { useState, useCallback } from "react"
 import { getAbout } from "../utils/api"
 import ThemeButton from "../components/ThemeButton"
-import Modal from "../components/Modal"
+import ResumeModal from "../components/ResumeModal"
 
 const About = ({ about }) => {
   const [showModal, setShowModal] = useState(false)
-
   function openModal() {
     setShowModal(!showModal)
   }
@@ -31,7 +30,7 @@ const About = ({ about }) => {
           <span onClick={openModal}>
             <ThemeButton title="Resume" />
           </span>
-          <Modal toggle={showModal} action={openModal} />
+          <ResumeModal toggle={showModal} action={openModal} />
           <ThemeButton title="Certifications" />
         </div>
       </section>

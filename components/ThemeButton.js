@@ -1,6 +1,5 @@
 import React from "react"
 import Link from "next/link"
-import Modal from "./Modal"
 
 const ThemeButton = (props) => {
   return (
