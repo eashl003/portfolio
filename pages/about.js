@@ -3,15 +3,20 @@ import { getAbout } from "../utils/api"
 import ThemeButton from "../components/ThemeButton"
 import ResumeModal from "../components/ResumeModal"
 import CertificationsModal from "../components/CertificationsModal"
+import EmailModal from "../components/EmailModal"
 
 const About = ({ about }) => {
   const [showResumeModal, setShowResumeModal] = useState(false)
   const [showCertModal, setShowCertModal] = useState(false)
+  const [showEmailModal, setShowEmailModal] = useState(false)
   function openResumeModal() {
     setShowResumeModal(!showResumeModal)
   }
   function openCertModal() {
     setShowCertModal(!showCertModal)
+  }
+  function openEmailModal() {
+    setShowEmailModal(!showEmailModal)
   }
 
   return (
@@ -24,7 +29,10 @@ const About = ({ about }) => {
           Oracle APEX Developer at Insum Solutions a Talan Company
         </h1>
         <div className="-mt-16">
-          <ThemeButton title="Email" />
+          <span onClick={openEmailModal}>
+            <ThemeButton title="Email" />
+          </span>
+          <EmailModal toggle={showEmailModal} action={openEmailModal} />
         </div>
       </section>
       <section className="">

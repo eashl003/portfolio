@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function CertificationsModal(props) {
+export default function EmailModal(props) {
   const modalState = props.toggle
   const action = props.action
 
@@ -12,9 +12,7 @@ export default function CertificationsModal(props) {
             <div className="max-w-7xl max-h-screen">
               <div className="border-0 rounded-lg shadow-lg relative w-full bg-white">
                 <div className="flex justify-between p-5 border-b border-solid border-slate-200 rounded-t">
-                  <h3 className="text-3xl font-semibold text-black">
-                    Certifications
-                  </h3>
+                  <h3 className="text-3xl font-semibold text-black">Email</h3>
                   <button
                     className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
                     onClick={action}
@@ -25,7 +23,7 @@ export default function CertificationsModal(props) {
                   </button>
                 </div>
                 <div className="relative p-6 flex-auto overflow-y-scroll w-120 h-110 text-black">
-                  <div>Certifications</div>
+                  <div>Email</div>
                 </div>
                 <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
                   <button
