@@ -30,7 +30,7 @@ const About = ({ about }) => {
         </h1>
         <div className="-mt-16">
           <span onClick={openEmailModal}>
-            <ThemeButton title="Email" />
+            <ThemeButton title="contact me" />
           </span>
           <EmailModal toggle={showEmailModal} action={openEmailModal} />
         </div>

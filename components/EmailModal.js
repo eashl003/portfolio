@@ -11,20 +11,20 @@ export default function EmailModal(props) {
           <div className="flex justify-center items-center fixed inset-0 z-50">
             <div className="max-w-7xl max-h-screen">
               <div className="border-0 rounded-lg shadow-lg relative w-full bg-white">
-                <div className="p-4 border-b border-solid border-slate-200 rounded-t">
-                  <h3 className="text-3xl font-semibold text-black">
+                <div className="flex justify-center items-center p-4 border-b border-solid border-slate-200 rounded-t">
+                  <h3 className="text-2xl font-semibold text-black">
                     Contact Me
                   </h3>
                   <button
                     className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
                     onClick={action}
                   >
-                    <span className="-m-10 bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+                    <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
                       ×
                     </span>
                   </button>
                 </div>
-                <div className="relative p-6 flex justify-center overflow-y-hidden w-110 h-100 text-black">
+                <div className="relative p-6 flex justify-center overflow-y-hidden w-100 h-95 text-black">
                   <div>
                     <form className="w-full max-w-lg">
                       <div className="flex flex-wrap -mx-3 mb-6">
@@ -69,7 +69,7 @@ export default function EmailModal(props) {
                           </p>
                         </div>
                       </div>
-                      <div className="flex flex-wrap -mx-3 mb-6">
+                      <div className="flex flex-wrap -mx-3">
                         <div className="w-full px-3">
                           <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
                             Message
@@ -79,9 +79,6 @@ export default function EmailModal(props) {
                             id="message"
                           ></textarea>
                         </div>
-                      </div>
-                      <div className="md:flex md:items-center">
-                        <div className="md:w-2/3"></div>
                       </div>
                     </form>
                   </div>
