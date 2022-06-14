@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import Credentials from "./Credentials"
 
 export default function ResumeModal(props) {
   const [openTab, setOpenTab] = useState(1)
@@ -102,7 +103,8 @@ export default function ResumeModal(props) {
                           className={openTab === 1 ? "block" : "hidden"}
                           id="link1"
                         >
-                          <p>Experience</p>
+                          <Credentials />
+                          <Credentials />
                         </div>
                         <div
                           className={openTab === 2 ? "block" : "hidden"}
